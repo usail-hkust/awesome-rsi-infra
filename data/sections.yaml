@@ -1,0 +1,67 @@
+# Order and titles of the list sections. Every entry in entries.yaml points at one `id` below.
+- id: surveys
+  title: Surveys & Perspectives
+  blurb: Surveys, position papers and scenario pieces that frame RSI as a whole.
+
+- id: loops
+  title: Improvement Loops
+  blurb: >-
+    The workloads. Self-modifying agents, evolutionary search, self-play and automated-research systems.
+    They are here because what each loop needs from its infrastructure is visible in how it is built.
+  groups:
+    - {id: loops.selfmod, title: "Self-modifying agents"}
+    - {id: loops.evolve, title: "Evolutionary program search"}
+    - {id: loops.selfplay, title: "Self-generated data & self-play"}
+    - {id: loops.context, title: "Context, skill & harness evolution"}
+    - {id: loops.research, title: "Automated research systems"}
+
+- id: execution
+  title: Execution Plane
+  blurb: Running proposed changes cheaply, in parallel, in isolation and reproducibly.
+  groups:
+    - {id: execution.runtime, title: "Loop runtimes & research platforms"}
+    - {id: execution.train, title: "Training & RL post-training systems"}
+    - {id: execution.serve, title: "Inference & rollout serving"}
+    - {id: execution.sandbox, title: "Sandboxes & environment execution"}
+
+- id: evaluation
+  title: Environment & Evaluation Plane
+  blurb: Where the signal comes from, and how to keep the improver from rewriting it.
+  groups:
+    - {id: evaluation.factory, title: "Task & environment factories"}
+    - {id: evaluation.bench, title: "AI research & ML engineering benchmarks"}
+    - {id: evaluation.kernel, title: "Kernel, algorithm & systems optimisation tasks"}
+    - {id: evaluation.harness, title: "Evaluation harnesses"}
+    - {id: evaluation.integrity, title: "Signal integrity & reward hacking"}
+
+- id: state
+  title: State & Lineage Plane
+  blurb: Keeping accepted changes, with their evidence, so later rounds can inherit, attribute and roll back.
+  groups:
+    - {id: state.archive, title: "Archives, lineage & trial ledgers"}
+    - {id: state.memory, title: "Experience, skills & memory"}
+
+- id: control
+  title: Control Plane
+  blurb: Identity, budgets, permissions, monitoring and the incidents that show why they matter.
+  groups:
+    - {id: control.oversight, title: "Oversight & monitoring"}
+    - {id: control.threat, title: "Sabotage, sandboxes & threat models"}
+    - {id: control.incidents, title: "Incidents & policies"}
+
+- id: measurement
+  title: Measuring RSI
+  blurb: Telling "got better" apart from "got better at getting better".
+  groups:
+    - {id: measurement.automation, title: "Measuring AI R&D automation"}
+    - {id: measurement.theory, title: "Theory, economics & evidence"}
+
+- id: industry
+  title: Industry Practice
+  blurb: >-
+    How companies actually run improvement loops. Mostly blogs, reports and closed systems: no paper,
+    sometimes no code, but often the only public record of RSI infrastructure at scale.
+
+- id: physical
+  title: Physical RSI Infra
+  blurb: Lab operating systems and robot-learning loops, where a trial costs real time and cannot be undone.

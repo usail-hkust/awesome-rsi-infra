@@ -1,0 +1,2656 @@
+# One record per paper, project, blog post or report. README tables are generated from this file:
+#   python scripts/build_readme.py
+#
+# Fields
+#   title    full title (papers: exactly as on arXiv; projects: "Name: what it is")
+#   year     publication or first-release year; month (optional) only sorts within a year
+#   venue    arXiv / conference / Nature / Blog / Report / GitHub ...
+#   org      optional; lab or company when it matters
+#   section  one id from data/sections.yaml (a group id when the section has groups)
+#   links    any of: paper, code, blog, project, docs
+#   access   open   = code or system released
+#            closed = described publicly (blog, report) but not released
+#            paper  = paper only, no code
+#   note     one line: what this gives an improvement loop
+
+# ------------------------------------------------------------------ surveys
+- title: "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence"
+  year: 2025
+  month: 7
+  venue: TMLR
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2507.21046"}
+  access: paper
+  note: "Organises self-evolving agents by what evolves, when, and how."
+
+- title: "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems"
+  year: 2025
+  month: 8
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2508.07407", code: "https://github.com/ANative-Lab/Awesome-Self-Evolving-Agents"}
+  access: open
+  note: "Feedback-loop framework (inputs, agent system, environment, optimisers) for self-evolving agents."
+
+- title: "Self-Improvements in Modern Agentic Systems: A Survey"
+  year: 2026
+  month: 7
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2607.13104", code: "https://github.com/selfimproving-agent/Awesome-Self-Improving-Agents"}
+  access: open
+  note: "Splits self-improvement into foundation-model updates and scaffold updates."
+
+- title: "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2609.11873"}
+  access: paper
+  note: "L1–L5 autonomy levels plus industrial case studies; names cross-round inheritance infra as an open challenge."
+
+- title: "From Existing Methods to New Research Ideas: Two Perspectives on Recursive Self-Improvement"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2610.14625", project: "https://prism-shadow.github.io/awesome-rsi/"}
+  access: paper
+  note: "Nine-dimension design space of RSI methods; the method-side complement to this list."
+
+- title: "Toward Recursive Self-Improvement in Physical AI"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2610.29677", code: "https://github.com/Physical2RSI/Awesome-Physical2RSI"}
+  access: open
+  note: "R1/R2 criteria for when a robot-learning loop is genuinely recursive."
+
+- title: "Safety in Self-Evolving Agents: A Survey"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2610.00093"}
+  access: paper
+  note: "Risks that arise when agents update parameters, memories, tools, skills and workflows after deployment."
+
+# ------------------------------------------------------------------ loops: self-modifying agents
+- title: "Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements"
+  name: Goedel Machines
+  year: 2003
+  month: 9
+  venue: arXiv
+  org: IDSIA
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/cs/0309048"}
+  access: paper
+  note: "The original self-rewriting problem solver; accepts a rewrite only with a proof of utility."
+
+- title: "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation"
+  year: 2023
+  month: 10
+  venue: COLM 2024
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2310.02304", code: "https://github.com/microsoft/stop"}
+  access: open
+  note: "A scaffold that improves code, then improves itself; logs sandbox-escape attempts along the way."
+
+- title: "Automated Design of Agentic Systems"
+  name: ADAS
+  year: 2024
+  month: 8
+  venue: ICLR 2025
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2408.08435", code: "https://github.com/ShengranHu/ADAS"}
+  access: open
+  note: "A meta agent writes new agents in code and keeps an archive of evaluated designs."
+
+- title: "Gödel Agent: A Self-Referential Agent Framework for Recursive Self-Improvement"
+  year: 2024
+  month: 10
+  venue: ACL 2025
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2410.04444", code: "https://github.com/Arvid-pku/Godel_Agent"}
+  access: open
+  note: "Agent patches its own runtime logic, including the code that does the patching."
+
+- title: "A Self-Improving Coding Agent"
+  name: SICA
+  year: 2025
+  month: 4
+  venue: arXiv
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2504.15228", code: "https://github.com/MaximeRobeyns/self_improving_coding_agent"}
+  access: open
+  note: "A coding agent that edits its own codebase, with an async overseer watching each run."
+
+- title: "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents"
+  year: 2025
+  month: 5
+  venue: arXiv
+  org: Sakana AI · UBC
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2505.22954", code: "https://github.com/jennyzzt/dgm", blog: "https://sakana.ai/dgm/"}
+  access: open
+  note: "Archive of self-modified coding agents; every child runs in a sandbox and is scored on SWE-bench."
+
+- title: "Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine"
+  year: 2025
+  month: 10
+  venue: arXiv
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2510.21614", code: "https://github.com/metauto-ai/HGM"}
+  access: open
+  note: "Scores a node by the success of its descendants (clade metaproductivity), not its own benchmark score."
+
+- title: "Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing"
+  name: Group-Evolving Agents
+  year: 2026
+  month: 2
+  venue: arXiv
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2602.04837"}
+  access: paper
+  note: "Makes a group of agents the unit of evolution so experience is shared across lineages."
+
+- title: "Hyperagents"
+  year: 2026
+  month: 3
+  venue: arXiv
+  org: Meta
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2603.19461", code: "https://github.com/facebookresearch/HyperAgents"}
+  access: open
+  note: "DGM-H; the meta-level improvement procedure is itself editable, for any computable task."
+
+- title: "Mendel Gödel Machine: Recursive Self-Improving Coding Agents via Comparative Evolution"
+  year: 2026
+  month: 8
+  venue: arXiv
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2608.07645", code: "https://github.com/RealLcz/MGM", project: "https://reallcz.github.io/MGM"}
+  access: open
+  note: "Derives self-modifications by comparing many archived attempts instead of one failure trace."
+
+- title: "Recursive self-improvement of AI research agents"
+  name: AIDE²
+  year: 2026
+  month: 9
+  venue: arXiv
+  org: Weco AI
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2609.26457", blog: "https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement"}
+  access: closed
+  note: "A research agent rewrites its own code; each accepted rewrite becomes the next round's editor."
+
+- title: "MetaShare: Failure-Aware Collective Self-Improvement for Open-Ended Agents"
+  year: 2026
+  month: 10
+  venue: NeurIPS 2026 Workshop
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2610.21887"}
+  access: paper
+  note: "Keeps failed improvement attempts as reusable cross-branch knowledge to avoid search collapse."
+
+# ------------------------------------------------------------------ loops: evolutionary search
+- title: "Mathematical discoveries from program search with large language models"
+  name: FunSearch
+  year: 2023
+  month: 12
+  venue: Nature
+  org: Google DeepMind
+  section: loops.evolve
+  links: {paper: "https://www.nature.com/articles/s41586-023-06924-6", code: "https://github.com/google-deepmind/funsearch"}
+  access: open
+  note: "LLM proposer + automatic evaluator + programs database, run asynchronously at scale."
+
+- title: "AlphaEvolve: A coding agent for scientific and algorithmic discovery"
+  year: 2025
+  month: 5
+  venue: arXiv
+  org: Google DeepMind
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2506.13131", blog: "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"}
+  access: closed
+  note: "Evolves whole codebases against machine-checkable evaluators; also used on Google's own training and scheduling stack."
+
+- title: "OpenEvolve: open-source implementation of AlphaEvolve"
+  year: 2025
+  month: 5
+  venue: GitHub
+  section: loops.evolve
+  links: {code: "https://github.com/algorithmicsuperintelligence/openevolve"}
+  access: open
+  note: "Program database, island model and async evaluator pool; a common base for re-implementations."
+
+- title: "ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution"
+  year: 2025
+  month: 9
+  venue: arXiv
+  org: Sakana AI
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2509.19349", code: "https://github.com/SakanaAI/ShinkaEvolve"}
+  access: open
+  note: "Novelty rejection sampling and bandit model selection to spend fewer evaluations per discovery."
+
+- title: "CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization"
+  year: 2025
+  month: 10
+  venue: EMNLP 2026 Findings
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2510.14150", code: "https://github.com/inter-co/science-codeevolve"}
+  access: open
+  note: "Island-based search over a CVT-MAP-Elites archive with a weighted LLM ensemble."
+
+- title: "GigaEvo: An Open Source Optimization Framework Powered By LLMs And Evolution Algorithms"
+  year: 2025
+  month: 11
+  venue: arXiv
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2511.17592", code: "https://github.com/FusionBrainLab/gigaevo-core"}
+  access: open
+  note: "Fills in the implementation details AlphaEvolve-style papers leave out, for reproducibility."
+
+- title: "ThetaEvolve: Test-time Learning on Open Problems"
+  year: 2025
+  month: 11
+  venue: arXiv
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2511.23473", code: "https://github.com/ypwang61/ThetaEvolve"}
+  access: open
+  note: "Couples evolutionary search with RL so the model internalises what the search finds."
+
+- title: "Effective Harness Engineering for Algorithm Discovery with Coding Agents"
+  year: 2026
+  month: 5
+  venue: arXiv
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2605.15221"}
+  access: paper
+  note: "Shows the execution harness, not just the model, decides discovery success at fixed token budget."
+
+# ------------------------------------------------------------------ loops: self-generated data
+- title: "STaR: Bootstrapping Reasoning With Reasoning"
+  year: 2022
+  month: 3
+  venue: NeurIPS 2022
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2203.14465", code: "https://github.com/ezelikman/STaR"}
+  access: open
+  note: "Generate rationales, keep the ones that reach the right answer, fine-tune, repeat."
+
+- title: "Self-Rewarding Language Models"
+  year: 2024
+  month: 1
+  venue: ICML 2024
+  org: Meta
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2401.10020"}
+  access: paper
+  note: "The model judges its own outputs; the judge and the policy improve together over DPO rounds."
+
+- title: "Absolute Zero: Reinforced Self-play Reasoning with Zero Data"
+  year: 2025
+  month: 5
+  venue: arXiv
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2505.03335", code: "https://github.com/LeapLabTHU/Absolute-Zero-Reasoner"}
+  access: open
+  note: "Proposes its own tasks and verifies them by executing code, with no human data."
+
+- title: "Self-Adapting Language Models"
+  name: SEAL
+  year: 2025
+  month: 6
+  venue: NeurIPS 2025
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2506.10943", code: "https://github.com/Continual-Intelligence/SEAL"}
+  access: open
+  note: "Model writes its own fine-tuning data and update directives, rewarded by downstream gains."
+
+- title: "R-Zero: Self-Evolving Reasoning LLM from Zero Data"
+  year: 2025
+  month: 8
+  venue: ICLR 2026
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2508.05004", code: "https://github.com/Chengsong-Huang/R-Zero"}
+  access: open
+  note: "Challenger and solver co-evolve from one base model."
+
+- title: "Language Self-Play For Data-Free Training"
+  year: 2025
+  month: 9
+  venue: arXiv
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2509.07414"}
+  access: paper
+  note: "A single model plays challenger and solver to keep training without new data."
+
+- title: "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning"
+  year: 2025
+  month: 11
+  venue: COLM 2026
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2511.16043", code: "https://github.com/aiming-lab/Agent0"}
+  access: open
+  note: "Curriculum and executor agents co-evolve; tool use makes the generated tasks verifiable."
+
+# ------------------------------------------------------------------ loops: context / harness
+- title: "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning"
+  year: 2025
+  month: 7
+  venue: ICLR 2026 (Oral)
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2507.19457", code: "https://github.com/gepa-ai/gepa"}
+  access: open
+  note: "Reflects on traces and keeps a Pareto front of prompts; far fewer rollouts than RL."
+
+- title: "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory"
+  year: 2025
+  month: 9
+  venue: ICLR 2026
+  org: Google
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2509.25140", code: "https://github.com/google-research/reasoning-bank"}
+  access: open
+  note: "Distils successes and failures into reusable strategy memories read at test time."
+
+- title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
+  name: ACE
+  year: 2025
+  month: 10
+  venue: ICLR 2026
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2510.04618", code: "https://github.com/ace-agent/ace"}
+  access: open
+  note: "Treats context as an evolving playbook with incremental delta updates instead of rewrites."
+
+- title: "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2609.24972"}
+  access: paper
+  note: "Puts cost and evaluation noise into the acceptance rule for harness edits."
+
+- title: "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2609.38372"}
+  access: paper
+  note: "Drops the separate proposer; the solver agent evolves the harness it runs on."
+
+# ------------------------------------------------------------------ loops: automated research
+- title: "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery"
+  year: 2024
+  month: 8
+  venue: arXiv
+  org: Sakana AI
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2408.06292", code: "https://github.com/SakanaAI/AI-Scientist", blog: "https://sakana.ai/ai-scientist/"}
+  access: open
+  note: "Idea → code → experiments → paper → automated review, end to end."
+
+- title: "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
+  year: 2025
+  month: 4
+  venue: arXiv
+  org: Sakana AI
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2504.08066", code: "https://github.com/SakanaAI/AI-Scientist-v2", blog: "https://sakana.ai/ai-scientist-first-publication/"}
+  access: open
+  note: "Agentic tree search over experiments, managed by an experiment-manager agent."
+
+- title: "autoresearch: AI agents running research on single-GPU nanochat training automatically"
+  year: 2026
+  month: 3
+  venue: GitHub
+  org: Andrej Karpathy
+  section: loops.research
+  links: {code: "https://github.com/karpathy/autoresearch"}
+  access: open
+  note: "Git branches as lineage and program.md as the research org's config; one GPU, fixed time budget."
+
+- title: "helix: autonomous research loops, reproducible, shareable, verifiable"
+  year: 2026
+  month: 3
+  venue: GitHub
+  org: Vector Institute
+  section: loops.research
+  links: {code: "https://github.com/VectorInstitute/helix"}
+  access: open
+  note: "Generalises the autoresearch loop to arbitrary research questions."
+
+- title: "Automated Weak-to-Strong Researcher"
+  year: 2026
+  month: 4
+  venue: Blog
+  org: Anthropic
+  section: loops.research
+  links: {blog: "https://alignment.anthropic.com/2026/automated-w2s-researcher/"}
+  access: closed
+  note: "Agents run an alignment research agenda end to end; cost and agent-hours reported."
+
+- title: "first-steps-toward-automated-ai-research: research artifacts from Recursive's automated AI research system"
+  name: first-steps-toward-automated-ai-research
+  year: 2026
+  month: 6
+  venue: GitHub
+  org: Recursive
+  section: loops.research
+  links: {code: "https://github.com/recursive-org/first-steps-toward-automated-ai-research"}
+  access: open
+  note: "Released training scripts and kernels found by a closed automated research system."
+
+# ------------------------------------------------------------------ execution: runtimes
+- title: "simply: minimal and scalable JAX research codebase for humans and agents"
+  year: 2025
+  month: 3
+  venue: GitHub
+  org: Google DeepMind
+  section: execution.runtime
+  links: {code: "https://github.com/google-deepmind/simply"}
+  access: open
+  note: "Minimal JAX research codebase meant to be read and edited by humans and agents alike."
+
+- title: "reef: infrastructure for continually self-improving agents"
+  year: 2026
+  month: 8
+  venue: GitHub
+  org: Human-Agent Society
+  section: execution.runtime
+  links: {code: "https://github.com/Human-Agent-Society/reef"}
+  access: open
+  note: "Serve → observe → grow → commit; versioned hot updates to weights or harness."
+
+- title: "RSIGym: A Flexible Environment for Recursive Self-Improvement"
+  year: 2026
+  month: 10
+  venue: arXiv
+  org: Evolvent AI
+  section: execution.runtime
+  links: {paper: "https://arxiv.org/abs/2610.10310", code: "https://github.com/evolvent-ai/RSIGym"}
+  access: open
+  note: "Training, inference, rollout, eval and sandbox as services behind one auth, budget and permission layer."
+
+# ------------------------------------------------------------------ execution: training
+- title: "HybridFlow: A Flexible and Efficient RLHF Framework"
+  name: HybridFlow
+  year: 2024
+  month: 9
+  venue: EuroSys 2025
+  org: ByteDance Seed
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2409.19256", code: "https://github.com/verl-project/verl"}
+  access: open
+  note: "The paper behind verl, the most widely used open RL post-training stack."
+
+- title: "AReaL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning"
+  year: 2025
+  month: 5
+  venue: arXiv
+  org: Ant Group
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2505.24298", code: "https://github.com/areal-project/AReaL"}
+  access: open
+  note: "Fully decouples generation from training so rollouts never wait for the learner."
+
+- title: "slime: an LLM post-training framework for RL scaling"
+  year: 2025
+  month: 6
+  venue: GitHub
+  org: Zhipu AI · THUDM
+  section: execution.train
+  links: {code: "https://github.com/THUDM/slime"}
+  access: open
+  note: "Megatron + SGLang RL stack; the trainable-weights backend used by reef."
+
+- title: "Tinker: a training API for fine-tuning open-weight models"
+  year: 2025
+  month: 10
+  venue: Product
+  org: Thinking Machines Lab
+  section: execution.train
+  links: {blog: "https://thinkingmachines.ai/tinker/", code: "https://github.com/thinking-machines-lab/tinker-cookbook"}
+  access: closed
+  note: "Training as a remote service; the loop writes the training logic, the provider runs the GPUs."
+
+# ------------------------------------------------------------------ execution: serving
+- title: "Efficient Memory Management for Large Language Model Serving with PagedAttention"
+  name: vLLM
+  year: 2023
+  month: 9
+  venue: SOSP 2023
+  section: execution.serve
+  links: {paper: "https://arxiv.org/abs/2309.06180", code: "https://github.com/vllm-project/vllm"}
+  access: open
+  note: "High-throughput serving used for rollouts in most open RL loops."
+
+- title: "SGLang: Efficient Execution of Structured Language Model Programs"
+  year: 2023
+  month: 12
+  venue: NeurIPS 2024
+  section: execution.serve
+  links: {paper: "https://arxiv.org/abs/2312.07104", code: "https://github.com/sgl-project/sglang"}
+  access: open
+  note: "Prefix-sharing runtime behind many agentic RL rollout engines."
+
+- title: "LiteLLM: a gateway for 100+ LLM APIs in the OpenAI format"
+  year: 2023
+  month: 7
+  venue: GitHub
+  section: execution.serve
+  links: {code: "https://github.com/BerriAI/litellm"}
+  access: open
+  note: "One endpoint, per-key budgets and logging for frontier-model calls inside a loop."
+
+- title: "Rethinking AI Cloud Infrastructure for Agentic Serving Systems with the Aries Experimentation Framework"
+  name: Aries
+  year: 2026
+  month: 7
+  venue: arXiv
+  section: execution.serve
+  links: {paper: "https://arxiv.org/abs/2607.29069"}
+  access: paper
+  note: "Joins agent trajectories with system telemetry across inference and sandboxed tool execution."
+
+# ------------------------------------------------------------------ execution: sandboxes
+- title: "E2B: open-source secure sandboxes for AI agents"
+  year: 2023
+  month: 3
+  venue: GitHub
+  section: execution.sandbox
+  links: {code: "https://github.com/e2b-dev/E2B", project: "https://e2b.dev/"}
+  access: open
+  note: "Firecracker micro-VMs on demand; the sandbox service in RSIGym."
+
+- title: "Daytona: secure and elastic infrastructure for running AI-generated code"
+  year: 2024
+  month: 2
+  venue: GitHub
+  section: execution.sandbox
+  links: {code: "https://github.com/daytonaio/daytona"}
+  access: open
+  note: "Fast-start isolated workspaces for agent-written code."
+
+- title: "Modal: serverless containers and GPUs"
+  year: 2022
+  venue: Product
+  section: execution.sandbox
+  links: {project: "https://modal.com/", code: "https://github.com/modal-labs/modal-client"}
+  access: closed
+  note: "Per-call sandboxes and GPUs; hosted third-party eval sandboxes appear in the July 2026 incident timeline."
+
+- title: "CUA-Sandbox: Efficient Environments for Computer-Use Agent Reinforcement Learning"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: execution.sandbox
+  links: {paper: "https://arxiv.org/abs/2609.32750"}
+  access: paper
+  note: "Shares one software runtime across parallel rollouts instead of cloning it per trajectory."
+
+# ------------------------------------------------------------------ evaluation: factories
+- title: "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code"
+  year: 2024
+  month: 5
+  venue: arXiv
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2405.15568"}
+  access: paper
+  note: "Foundation models write new environments and success checks as code, endlessly."
+
+- title: "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2610.09426"}
+  access: paper
+  note: "Multi-agent pipeline that turns papers into executable research environments with checked evaluation."
+
+# ------------------------------------------------------------------ evaluation: benchmarks
+- title: "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering"
+  year: 2024
+  month: 10
+  venue: ICLR 2025
+  org: OpenAI
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2410.07095", code: "https://github.com/openai/mle-bench", blog: "https://openai.com/index/mle-bench/"}
+  access: open
+  note: "75 Kaggle competitions with local graders; the standard ML-engineering yardstick."
+
+- title: "RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts"
+  year: 2024
+  month: 11
+  venue: arXiv
+  org: METR
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2411.15114", code: "https://github.com/METR/RE-Bench", blog: "https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/"}
+  access: open
+  note: "Seven open-ended AI R&D environments with human-expert baselines at matched time budgets."
+
+- title: "PaperBench: Evaluating AI's Ability to Replicate AI Research"
+  year: 2025
+  month: 4
+  venue: arXiv
+  org: OpenAI
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2504.01848", code: "https://github.com/openai/frontier-evals", blog: "https://openai.com/index/paperbench/"}
+  access: open
+  note: "Replicate ICML papers from scratch; graded by an LLM judge against author-written rubrics."
+
+- title: "PostTrainBench: Can LLM Agents Automate LLM Post-Training?"
+  year: 2026
+  month: 3
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2603.08640"}
+  access: paper
+  note: "Can an agent post-train a base LLM on its own, under a fixed compute budget?"
+
+- title: "Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?"
+  year: 2026
+  month: 4
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2604.10547"}
+  access: paper
+  note: "Agents must design, debug and run an RL post-training pipeline end to end."
+
+- title: "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents"
+  year: 2026
+  month: 8
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2608.04003", code: "https://github.com/Gen-Verse/PAST-Bench"}
+  access: open
+  note: "Tests whether retained preferences, histories and skills actually improve later sessions."
+
+- title: "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement"
+  year: 2026
+  month: 8
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2608.20318"}
+  access: paper
+  note: "Can an agent design better training objectives and update rules, the process that makes the next agent?"
+
+- title: "MMPostTrainBench: Benchmarking Autonomous Research for Multimodal Post-Training"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2610.05398", code: "https://github.com/sod1010/MMPostTrainBench"}
+  access: open
+  note: "Eight image, audio and video post-training tasks for autonomous research agents."
+
+- title: "DataSense-Bench: The First Step Toward an AI Scientist"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2610.12190", project: "https://datasense-bench.github.io/"}
+  access: paper
+  note: "Can agents pick the right training data and forecast its effect before spending compute?"
+
+# ------------------------------------------------------------------ evaluation: harnesses
+- title: "Inspect: a framework for large language model evaluations"
+  year: 2023
+  month: 11
+  venue: GitHub
+  org: UK AISI
+  section: evaluation.harness
+  links: {code: "https://github.com/UKGovernmentBEIS/inspect_ai"}
+  access: open
+  note: "Tasks, solvers, scorers and sandboxed tools as composable pieces; widely used for agent evals."
+
+- title: "Harbor: a framework for evaluating and improving agents"
+  year: 2025
+  month: 8
+  venue: GitHub
+  org: Laude Institute
+  section: evaluation.harness
+  links: {code: "https://github.com/harbor-framework/harbor"}
+  access: open
+  note: "Containerised agent tasks run at scale; the eval service in RSIGym."
+
+# ------------------------------------------------------------------ evaluation: integrity
+- title: "Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack"
+  name: BenchJack
+  year: 2026
+  month: 5
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2605.12673"}
+  access: paper
+  note: "Taxonomy of benchmark exploits and an auditor that finds them before agents do."
+
+- title: "SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents"
+  year: 2026
+  month: 5
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2605.21384"}
+  access: paper
+  note: "When nobody can review the code, the test suite is the only overseer; measures how agents game it."
+
+- title: "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks"
+  year: 2026
+  month: 8
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2608.30724"}
+  access: paper
+  note: "Plants shortcuts in the data and task itself, not just the grader."
+
+- title: "Reflections on Trusting Trust, Revisited: Contaminating Self-Modifying AI Coding Agents with Poisoned Benchmarks"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2609.17817"}
+  access: paper
+  note: "A poisoned benchmark can plant behaviour that survives into a self-modifying agent's descendants."
+
+- title: "Reward Hacking Challenges Oversight of Autonomous Research Agents"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2609.28614"}
+  access: paper
+  note: "Research agents control both the result and its evidence; measures unprompted hacking and its detectability."
+
+- title: "CheatBench: Measuring Reward Gaming in AI Agents"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2609.36308"}
+  access: paper
+  note: "Catalogues unauthorised access, monitor evasion and sandbox breaches by reward-maximising agents."
+
+# ------------------------------------------------------------------ control
+- title: "AI Control: Improving Safety Despite Intentional Subversion"
+  year: 2023
+  month: 12
+  venue: ICML 2024
+  org: Redwood Research
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2312.06942"}
+  access: paper
+  note: "Trusted monitoring and editing protocols that stay safe even if the untrusted model schemes."
+
+- title: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation"
+  year: 2025
+  month: 3
+  venue: arXiv
+  org: OpenAI
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2503.11926", blog: "https://openai.com/index/chain-of-thought-monitoring/"}
+  access: paper
+  note: "CoT monitors catch reward hacking in frontier RL; optimising against them teaches obfuscation."
+
+- title: "CTRL-ALT-DECEIT: Sabotage Evaluations for Automated AI R&D"
+  year: 2025
+  month: 11
+  venue: NeurIPS 2025 (Spotlight)
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2511.09904"}
+  access: paper
+  note: "Agents in MLE tasks asked to sabotage or sandbag; tests whether monitors notice."
+
+- title: "AI Sandboxes: A Threat Model, Taxonomy, and Measurement Framework"
+  year: 2026
+  month: 6
+  venue: arXiv
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2606.18532"}
+  access: paper
+  note: "Threat model for bounded evaluation environments, including physical and networked systems."
+
+- title: "Natural Emergent Misalignment from Reward Hacking in Production RL"
+  year: 2025
+  month: 11
+  venue: arXiv
+  org: Anthropic
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2511.18397"}
+  access: paper
+  note: "Reward hacking learned in real training environments generalises into broader misalignment."
+
+- title: "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident"
+  year: 2026
+  month: 8
+  venue: Blog
+  org: Hugging Face
+  section: control.incidents
+  links: {blog: "https://huggingface.co/blog/agent-intrusion-technical-timeline"}
+  access: closed
+  note: "Step-by-step timeline: package proxy SSRF, third-party sandbox pivot, leaked credentials."
+
+- title: "The Hugging Face incident and the road ahead"
+  year: 2026
+  month: 8
+  venue: Blog
+  org: OpenAI
+  section: control.incidents
+  links: {blog: "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"}
+  access: closed
+  note: "Agents in research infra used shared services as covert channels; ties the escape to trained-in reward hacking."
+
+- title: "When AI Agents Attack: The OpenAI-Hugging Face Intrusion"
+  year: 2026
+  month: 8
+  venue: Report
+  org: Cloud Security Alliance
+  section: control.incidents
+  links: {blog: "https://labs.cloudsecurityalliance.org/research/csa-research-note-autonomous-ai-agent-intrusion-openai-huggi/"}
+  access: closed
+  note: "Third-party security read of the incident and the controls it implies."
+
+- title: "Anthropic's Responsible Scaling Policy"
+  year: 2026
+  month: 7
+  venue: Policy
+  org: Anthropic
+  section: control.incidents
+  links: {blog: "https://www.anthropic.com/responsible-scaling-policy"}
+  access: closed
+  note: "Defines an AI R&D capability threshold and the safeguards it triggers (v3.4)."
+
+- title: "Review of the \"Risks from automated R&D\" section in the Anthropic Risk Report (February 2026)"
+  year: 2026
+  month: 5
+  venue: Blog
+  org: METR
+  section: control.incidents
+  links: {blog: "https://metr.org/blog/2026-05-08-rd-section-anthropic-risk-report-feb-2026-review/"}
+  access: closed
+  note: "External review of whether the evidence supports \"not yet at the AI R&D threshold\"."
+
+# ------------------------------------------------------------------ measurement
+- title: "Measuring AI Ability to Complete Long Software Tasks"
+  year: 2025
+  month: 3
+  venue: NeurIPS 2025
+  org: METR
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2503.14499", code: "https://github.com/METR/eval-analysis-public", blog: "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"}
+  access: open
+  note: "50%-time-horizon metric; the most cited trend line for agent autonomy."
+
+- title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+  year: 2025
+  month: 7
+  venue: arXiv
+  org: METR
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2507.09089", blog: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"}
+  access: paper
+  note: "Randomised trial; perceived speed-up and measured speed-up can point in opposite directions."
+
+- title: "Toward an O*NET for AI R&D"
+  year: 2026
+  month: 6
+  venue: Blog
+  org: Epoch AI
+  section: measurement.automation
+  links: {blog: "https://epochai.substack.com/p/toward-an-onet-for-ai-r-and-d"}
+  access: closed
+  note: "AL0–AL5 automation levels and a six-stage task taxonomy, later adopted by OpenAI and Anthropic."
+
+- title: "Measurements for understanding the pace of AI development inside frontier labs"
+  year: 2026
+  venue: Blog
+  org: Anthropic
+  section: measurement.automation
+  links: {blog: "https://www.anthropic.com/institute/measuring-pace-of-ai-development"}
+  access: closed
+  note: "Proposes public metrics such as an R&D Automation Index, monitor coverage and compute split."
+
+- title: "Recursive Criticality of AI Self-Improvement"
+  year: 2026
+  month: 8
+  venue: arXiv
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2609.00137"}
+  access: paper
+  note: "A reproduction number R_AI for when AI-assisted R&D becomes self-amplifying."
+
+- title: "The Economics of Recursive Self-Improvement"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2609.15802"}
+  access: paper
+  note: "Acceleration depends on the product of elasticities around each feedback loop."
+
+# ------------------------------------------------------------------ industry
+- title: "When AI builds itself"
+  year: 2026
+  venue: Blog
+  org: Anthropic
+  section: industry
+  links: {blog: "https://www.anthropic.com/institute/recursive-self-improvement"}
+  access: closed
+  note: "~30k concurrent agents on one platform, monitor coverage, and human review as the new bottleneck."
+
+- title: "Research acceleration: The view inside OpenAI"
+  year: 2026
+  month: 9
+  venue: Blog
+  org: OpenAI
+  section: industry
+  links: {blog: "https://openai.com/index/research-acceleration-view-inside-openai/"}
+  access: closed
+  note: "Agent-workdays per human workday, per-researcher inference spend, and how compute gets substituted."
+
+- title: "Naive-N0.5-Flash: Building Frontier AI with AI"
+  year: 2026
+  venue: Blog
+  org: NaiveAI
+  section: industry
+  links: {blog: "https://naive.ai/en/research/"}
+  access: closed
+  note: "~10M sandboxes a week under one control plane; trial ledger with bit-exact acceptance gates."
+
+- title: "NaiveRT: a self-contained TP8 inference runtime for the Naive N series"
+  year: 2026
+  month: 9
+  venue: GitHub
+  org: NaiveAI
+  section: industry
+  links: {code: "https://github.com/NaiveAI-Labs/NaiveRT"}
+  access: open
+  note: "An inference runtime built mostly by AI agents over logged trials; infra improving infra."
+
+# ------------------------------------------------------------------ physical
+- title: "UniLabOS: An AI-Native Operating System for Autonomous Laboratories"
+  year: 2025
+  month: 12
+  venue: arXiv
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2512.21766"}
+  access: paper
+  note: "Typed, stateful abstractions that connect planning agents to lab hardware."
+
+- title: "ARES OS 2.0: An Orchestration Software Suite for Autonomous Experimentation Systems and Self-Driving Labs"
+  year: 2026
+  month: 4
+  venue: arXiv
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2604.03440"}
+  access: paper
+  note: "Service-oriented orchestration of instruments, analysis and planners for closed-loop experiments."
+
+- title: "EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2609.38905"}
+  access: paper
+  note: "Builds task-specific simulations from deployment scenes to target the policy's own failures."
+
+- title: "Self-Building Labs"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2610.23826"}
+  access: paper
+  note: "Lets agents reconfigure the self-driving lab itself, so new experiments need less manual engineering."
+
+# ================================================================== 2025-2026 paper sweep
+
+# ------------------------------------------------------------------ control.oversight
+- title: "Async Control: Stress-testing Asynchronous Control Measures for LLM Agents"
+  year: 2025
+  month: 12
+  venue: "arXiv"
+  org: UK AISI
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2512.13526", code: "https://github.com/UKGovernmentBEIS/async-control"}
+  access: open
+  note: "Stress-tests after-the-fact monitoring of SWE agents as an adversarial game."
+
+- title: "Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2607.07368"}
+  access: paper
+  note: "FakeLab codebase shows per-agent monitors miss distributed multi-agent attacks."
+
+- title: "GDM AI Control Roadmap"
+  name: "GDM AI Control Roadmap"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  org: Google DeepMind
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2607.13087"}
+  access: paper
+  note: "Google DeepMind's blueprint for layered internal security against misaligned agents."
+
+- title: "SAHOO: Safeguarded Alignment for High-Order Optimization Objectives in Recursive Self-Improvement"
+  year: 2026
+  month: 3
+  venue: "ICLR 2026 Workshop (RSI)"
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2603.06333", code: "https://github.com/SubramanyamSahoo/SAHOO-Safeguarded-Alignment-for-High-Order-Optimization-Objectives-in-Recursive-Self-Improvement"}
+  access: open
+  note: "Goal Drift Index, constraint checks and regression risk to monitor RSI alignment drift."
+
+- title: "Comprehension Audits to Mitigate Risks from Automated AI Research"
+  name: "Comprehension Audits"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2610.10064"}
+  access: paper
+  note: "Proposes precommitted audits proving humans understand AI-written code before continuing development."
+
+- title: "AI Scientist Mission Control (AIMC): Visual Analytics for Human Oversight of Autonomous Scientific Discovery"
+  year: 2026
+  month: 8
+  venue: "arXiv"
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2608.28637"}
+  access: paper
+  note: "Visual analytics for human oversight of AI-scientist ideas, experiments and failure modes."
+
+# ------------------------------------------------------------------ control.threat
+- title: "ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2607.19321", code: "https://github.com/aisa-group/ResearchArena"}
+  access: open
+  note: "AI control for automated AI R&D: four tasks with hidden sabotage side tasks."
+
+- title: "Auditing Sabotage Bench: A Benchmark for Detecting and Fixing Research Sabotage in ML Codebases"
+  year: 2026
+  month: 4
+  venue: "arXiv"
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2604.16286", code: "https://github.com/ejcgan/auditing-sabotage-bench"}
+  access: open
+  note: "9 ML research codebases with sabotaged variants; tests LLM and human auditors."
+
+- title: "Evaluating whether AI models would sabotage AI safety research"
+  year: 2026
+  month: 4
+  venue: "arXiv"
+  org: Anthropic
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2604.24618"}
+  access: paper
+  note: "Tests whether Claude research agents sabotage safety research, unprompted or via continuation."
+
+- title: "SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents"
+  year: 2025
+  month: 6
+  venue: "arXiv"
+  org: Anthropic
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2506.15740", code: "https://github.com/safety-research/SHADE-Arena"}
+  access: open
+  note: "Diverse agent environments pairing main tasks with hidden harmful side tasks and monitors."
+
+- title: "Quantifying Frontier LLM Capabilities for Container Sandbox Escape"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  org: UK AISI
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2603.02277", code: "https://github.com/UKGovernmentBEIS/sandbox_escape_bench"}
+  access: open
+  note: "Inspect CTF benchmark measuring LLM ability to escape Docker/OCI sandboxes."
+
+- title: "Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents"
+  year: 2025
+  month: 9
+  venue: "ICLR 2026"
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2509.26354", code: "https://github.com/ShaoShuai0605/Misevolution"}
+  access: open
+  note: "Evaluates emergent risks along model, memory, tool and workflow self-evolution paths."
+
+- title: "SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2609.35596", code: "https://github.com/SEABench-Endogenous-Misalignment/SEABench"}
+  access: open
+  note: "Benchmark for endogenous misalignment from persistent harness, memory and skill updates."
+
+- title: "Safety Must Survive Self-Improvement: Why Failures Persist and How Agents Recover"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: control.threat
+  links: {paper: "https://arxiv.org/abs/2610.01073", project: "https://RSI-Safety.github.io/"}
+  access: paper
+  note: "Testbed showing stale archive scores preserve unsafe programs across self-improvement generations."
+
+# ------------------------------------------------------------------ evaluation.bench
+- title: "RSIBench-Data: Benchmarking Data-Centric Research for Recursive Self-Improvement"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2607.25886", code: "https://github.com/evolvent-ai/RSIBench-Data"}
+  access: open
+  note: "Data-centric post-training research benchmark on fixed Tinker/Harbor/E2B stack with fixed budgets."
+
+- title: "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2610.04184", code: "https://github.com/Mercury7353/self-evaluation-bench", project: "https://mercury7353.github.io/self-evaluation-bench"}
+  access: open
+  note: "Tests whether agents can build cheap executable evaluators that track full benchmarks."
+
+- title: "MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2605.08678", code: "https://github.com/Imbernoulli/MLS-Bench", project: "https://mls-bench.com"}
+  access: open
+  note: "140 tasks in 12 domains testing invention of generalizable, scalable ML methods."
+
+- title: "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents"
+  year: 2026
+  month: 2
+  venue: "arXiv"
+  org: Meta
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2602.06855", code: "https://github.com/facebookresearch/airs-bench"}
+  access: open
+  note: "20 tasks from recent ML papers covering the full research lifecycle."
+
+- title: "MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  org: Oracle
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2610.23506", code: "https://github.com/oracle-samples/mlops-bench"}
+  access: open
+  note: "Executable lifecycle changes inside real production ML repositories: pipelines, serving, monitoring, CI."
+
+- title: "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2605.17373", code: "https://github.com/qrzou/FML-bench"}
+  access: open
+  note: "Separates research-agent search strategy from execution infrastructure for controlled comparison."
+
+- title: "MLGym: A New Framework and Benchmark for Advancing AI Research Agents"
+  year: 2025
+  month: 2
+  venue: "arXiv"
+  org: Meta
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2502.14499", code: "https://github.com/facebookresearch/MLGym"}
+  access: open
+  note: "Gym environment with 13 open-ended AI research tasks, built for training research agents with RL."
+
+- title: "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering"
+  year: 2025
+  month: 5
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2505.07782", code: "https://github.com/MLE-Dojo/MLE-Dojo", project: "https://mle-dojo.github.io/MLE-Dojo-page"}
+  access: open
+  note: "Gym-style interactive MLE environment over 200+ Kaggle challenges for training and evaluation."
+
+- title: "Can Language Models Discover Scaling Laws?"
+  year: 2025
+  month: 7
+  venue: "ICLR 2026 Workshop (RSI, spotlight)"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2507.21184", code: "https://github.com/linhaowei1/SLD", project: "https://linhaowei1.github.io/scaling_law_discovery"}
+  access: open
+  note: "Scaling-law discovery tasks from 5,000+ experiments; evolution-based SLDAgent baseline."
+
+- title: "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2609.28850", code: "https://github.com/mithils3/reclaim"}
+  access: open
+  note: "100 NeurIPS 2025 paper-reproduction tasks with fixed targets and GPU budgets; rebuildable yearly."
+
+- title: "MirrorCode: AI can rebuild entire programs from behavior alone"
+  year: 2026
+  month: 6
+  venue: "arXiv"
+  org: Epoch AI
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2606.30182", code: "https://github.com/epoch-research/MirrorCode"}
+  access: open
+  note: "Long-horizon benchmark of reimplementing entire programs from observed behavior alone."
+
+# ------------------------------------------------------------------ evaluation.factory
+- title: "AutoGym: Blueprint-First Generation of Verifiable Agent Gyms"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2609.22592"}
+  access: paper
+  note: "Blueprint-first generation of tasks, environments and verifiers with active curriculum synthesis."
+
+- title: "SWE-smith: Scaling Data for Software Engineering Agents"
+  year: 2025
+  month: 4
+  venue: "NeurIPS 2025 (D&B)"
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2504.21798", code: "https://github.com/SWE-bench/SWE-smith", project: "https://swesmith.com"}
+  access: open
+  note: "Scalable pipeline synthesizing SWE training task instances and execution environments."
+
+- title: "ML-AutoResearch: Training Machine Learning Research Agents with Automatically Generated Environments"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2603.17216"}
+  access: paper
+  note: "Automatically generates executable end-to-end ML research tasks for training research agents."
+
+# ------------------------------------------------------------------ evaluation.harness
+- title: "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces"
+  year: 2026
+  month: 1
+  venue: "arXiv"
+  section: evaluation.harness
+  links: {paper: "https://arxiv.org/abs/2601.11868", code: "https://github.com/harbor-framework/terminal-bench-2", project: "https://www.tbench.ai/"}
+  access: open
+  note: "89 hard terminal tasks, each with its own environment, reference solution and tests."
+
+# ------------------------------------------------------------------ evaluation.integrity
+- title: "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases"
+  year: 2025
+  month: 10
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2510.20270", code: "https://github.com/safety-research/impossiblebench"}
+  access: open
+  note: "Impossible task variants measure how often agents exploit or modify test cases."
+
+- title: "EvilGenie: A Reward Hacking Benchmark"
+  year: 2025
+  month: 11
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2511.21654", code: "https://github.com/JonathanGabor/evilgenie_inspect"}
+  access: open
+  note: "Reward-hacking benchmark; detection via held-out tests, LLM judges, test-file edit checks."
+
+- title: "RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2603.11337", code: "https://github.com/Yonas650/RewardHackingAgents"}
+  access: open
+  note: "Measures evaluator tampering and train/test leakage by ML-engineering agents."
+
+- title: "Hack-Verifiable Environments: Towards Evaluating Reward Hacking at Scale"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2605.20744", code: "https://github.com/MajoRoth/hack-verifiable-environments", project: "https://majoroth.github.io/hack-verifiable-environments/"}
+  access: open
+  note: "Embeds detectable hacking opportunities so reward hacking is measured deterministically."
+
+- title: "Scalable Weak-to-Strong Verifier Hardening for Agent Environments"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2610.15924", project: "https://verifier-hardening.github.io/"}
+  access: paper
+  note: "Automatic hacker-fixer loop hardens verifiers in Terminal-Bench, KernelBench and SETA."
+
+- title: "Establishing Best Practices for Building Rigorous Agentic Benchmarks"
+  year: 2025
+  month: 7
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2507.02825", code: "https://github.com/uiuc-kang-lab/agentic-benchmarks", project: "https://uiuc-kang-lab.github.io/agentic-benchmarks"}
+  access: open
+  note: "Agentic Benchmark Checklist for task/reward validity; flaws cause up to 100% misestimation."
+
+- title: "Which Self-Improvements Should We Trust? Reliable Self-Improvement When Agents Reuse Their Benchmarks"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2609.33180"}
+  access: paper
+  note: "Certified promotion under benchmark reuse, preventing adaptive overfitting in RSI search."
+
+- title: "Re-executing Coding-Agent Evaluations: Unchanged Decisions and Unresolved Policy Risk"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: evaluation.integrity
+  links: {paper: "https://arxiv.org/abs/2610.14460"}
+  access: paper
+  note: "Preregistered re-execution studies of test-graded coding-agent patches used for rewards and self-improvement."
+
+# ------------------------------------------------------------------ evaluation.kernel
+- title: "The Automated LLM Speedrunning Benchmark: Reproducing NanoGPT Improvements"
+  year: 2025
+  month: 6
+  venue: "arXiv"
+  org: Meta
+  section: evaluation.kernel
+  links: {paper: "https://arxiv.org/abs/2506.22419", code: "https://github.com/facebookresearch/llm-speedrunner"}
+  access: open
+  note: "19 NanoGPT speedrun record-reproduction tasks testing agents on reproducing training improvements."
+
+- title: "AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?"
+  year: 2025
+  month: 7
+  venue: "NeurIPS 2025"
+  section: evaluation.kernel
+  links: {paper: "https://arxiv.org/abs/2507.15887", code: "https://github.com/oripress/AlgoTune"}
+  access: open
+  note: "154 tasks; framework validates and times LM code against reference implementations."
+
+- title: "KernelBench: Can LLMs Write Efficient GPU Kernels?"
+  year: 2025
+  month: 2
+  venue: "arXiv"
+  section: evaluation.kernel
+  links: {paper: "https://arxiv.org/abs/2502.10517", code: "https://github.com/ScalingIntelligence/KernelBench"}
+  access: open
+  note: "250 PyTorch workloads for evaluating LM-written GPU kernels on correctness and speed."
+
+- title: "SOL-ExecBench: Speed-of-Light Benchmarking for Real-World GPU Kernels Against Hardware Limits"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  org: NVIDIA
+  section: evaluation.kernel
+  links: {paper: "https://arxiv.org/abs/2603.19173", code: "https://github.com/NVIDIA/SOL-ExecBench"}
+  access: open
+  note: "235 CUDA kernel problems scored against hardware speed-of-light rather than software baselines."
+
+- title: "FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems"
+  year: 2026
+  month: 1
+  venue: "arXiv"
+  section: evaluation.kernel
+  links: {paper: "https://arxiv.org/abs/2601.00227", code: "https://github.com/flashinfer-ai/flashinfer-bench"}
+  access: open
+  note: "Closed-loop kernel generation, benchmarking and deployment via unified FlashInfer Trace schema."
+
+# ------------------------------------------------------------------ execution.runtime
+- title: "Recursive Self-Improvement on a Budget: Scoring Code Edits Before They Run"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: execution.runtime
+  links: {paper: "https://arxiv.org/abs/2610.29121"}
+  access: paper
+  note: "Scores proposed self-edits with a frozen linear readout before running costly evaluations."
+
+# ------------------------------------------------------------------ execution.sandbox
+- title: "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  org: DeepSeek
+  section: execution.sandbox
+  links: {paper: "https://arxiv.org/abs/2609.22978"}
+  access: paper
+  note: "DeepSeek production sandbox platform: FnCall/container/microVM/VM backends behind one SDK."
+
+- title: "SWE-MiniSandbox: Container-Free Reinforcement Learning for Building Software Engineering Agents"
+  year: 2026
+  month: 2
+  venue: "arXiv"
+  section: execution.sandbox
+  links: {paper: "https://arxiv.org/abs/2602.11210", code: "https://github.com/lblankl/SWE-MiniSandbox", project: "https://lblankl.github.io/SWE-MiniSandbox"}
+  access: open
+  note: "Container-free kernel-level isolation: ~5% disk and ~25% setup time of container pipelines."
+
+- title: "Synthetic Sandbox for Training Machine Learning Engineering Agents"
+  year: 2026
+  month: 4
+  venue: "arXiv"
+  section: execution.sandbox
+  links: {paper: "https://arxiv.org/abs/2604.04872", code: "https://github.com/Tonyzhou98/SandMLE"}
+  access: open
+  note: "Synthetic micro-dataset MLE sandboxes cut execution time 13x, enabling on-policy RL."
+
+# ------------------------------------------------------------------ execution.serve
+- title: "ProRL Agent: Rollout-as-a-Service for RL Training of Multi-Turn LLM Agents"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  org: NVIDIA
+  section: execution.serve
+  links: {paper: "https://arxiv.org/abs/2603.18815", code: "https://github.com/NVIDIA-NeMo/ProRL-Agent-Server"}
+  access: open
+  note: "Rollout-as-a-service API with rootless HPC sandboxes; integrated into NVIDIA NeMo Gym."
+
+- title: "Polar: Agentic RL on Any Harness at Scale"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  org: NVIDIA
+  section: execution.serve
+  links: {paper: "https://arxiv.org/abs/2605.24220"}
+  access: paper
+  note: "Proxies LLM calls of black-box harnesses to rebuild token-faithful trajectories for async RL."
+
+# ------------------------------------------------------------------ execution.train
+- title: "Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Asynchrony"
+  year: 2025
+  month: 10
+  venue: "arXiv"
+  org: Alibaba
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2510.11345", code: "https://github.com/alibaba/ROLL"}
+  access: open
+  note: "Extends ROLL with asynchronous rollout-train decoupling and fine-grained parallelism for agentic RL."
+
+- title: "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent"
+  year: 2025
+  month: 11
+  venue: "arXiv"
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2511.16108", code: "https://github.com/NovaSky-AI/SkyRL"}
+  access: open
+  note: "Multi-turn agent RL framework with async dispatching; interoperates with SkyRL-train, VeRL, Tinker."
+
+- title: "Agent Lightning: Train ANY AI Agents with Reinforcement Learning"
+  year: 2025
+  month: 8
+  venue: "arXiv"
+  org: Microsoft
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2508.03680", code: "https://github.com/microsoft/agent-lightning"}
+  access: open
+  note: "Fully decouples agent execution from RL training, so existing agents train unmodified."
+
+- title: "AstraFlow: Dataflow-Oriented Reinforcement Learning for Agentic LLMs"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2605.15565", code: "https://github.com/Infini-AI-Lab/astraflow", project: "https://infini-ai-lab.github.io/astraflow"}
+  access: open
+  note: "Dataflow-oriented RL system decoupling rollout, dataflow and training for elastic heterogeneous compute."
+
+- title: "OpenTinker: Separating Concerns in Agentic Reinforcement Learning"
+  year: 2026
+  month: 1
+  venue: "arXiv"
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2601.07376", code: "https://github.com/open-tinker/OpenTinker"}
+  access: open
+  note: "Runtime managing many LoRA-backed policies, rollouts and checkpoints over shared execution resources."
+
+- title: "LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents"
+  year: 2026
+  month: 8
+  venue: "arXiv"
+  section: execution.train
+  links: {paper: "https://arxiv.org/abs/2608.17393", code: "https://github.com/LegoX/Lego-RL", project: "https://lego-rl.pages.dev"}
+  access: open
+  note: "Harness-native RL for coding agents: LLM proxying, cached sandboxes, reward-hacking defenses."
+
+# ------------------------------------------------------------------ loops.context
+- title: "Meta-Harness: End-to-End Optimization of Model Harnesses"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2603.28052", code: "https://github.com/stanford-iris-lab/meta-harness"}
+  access: open
+  note: "Agentic proposer searches harness code using filesystem of prior candidates, scores and traces."
+
+- title: "AutoHarness: improving LLM agents by automatically synthesizing a code harness"
+  year: 2026
+  month: 2
+  venue: "ICLR 2026 Workshop (RSI)"
+  section: loops.context
+  links: {paper: "https://arxiv.org/abs/2603.03329"}
+  access: paper
+  note: "LLM synthesizes code harnesses preventing all illegal moves across 145 TextArena games."
+
+# ------------------------------------------------------------------ loops.evolve
+- title: "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2610.03675", code: "https://github.com/chchenhui/frugalevo"}
+  access: open
+  note: "Cost-aware program evolution: strong LLM plans strategies, cheap LLM implements; maximizes gain per cost."
+
+- title: "Simple Baselines are Competitive with Code Evolution"
+  year: 2026
+  month: 2
+  venue: "ICLR 2026 Workshop (RSI)"
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2602.16805", code: "https://github.com/YonatanGideoni/code_evo_simple_baselines"}
+  access: open
+  note: "Two simple baselines match complex code-evolution pipelines across several domains."
+
+- title: "Learning to Discover at Test Time"
+  year: 2026
+  month: 1
+  venue: "arXiv"
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2601.16175", code: "https://github.com/test-time-training/discover"}
+  access: open
+  note: "Test-time RL on a single problem to discover new state-of-the-art solutions."
+
+- title: "Barbarians at the Gate: How AI is Upending Systems Research"
+  year: 2025
+  month: 10
+  venue: "arXiv"
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2510.06189", code: "https://github.com/UCB-ADRS/ADRS"}
+  access: open
+  note: "AI-driven systems research where simulators provide reliable verifiers for evolved algorithms."
+
+# ------------------------------------------------------------------ loops.research
+- title: "Gödel Forest: Balancing Search Depth and Breadth for Data-Centric Recursive Self-Improvement"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2609.36675", code: "https://github.com/evolvent-ai/Godel-Forest"}
+  access: open
+  note: "Data-centric RSI as ensemble of persistent co-evolving search trees over data strategies."
+
+- title: "Towards Execution-Grounded Automated AI Research"
+  year: 2026
+  month: 1
+  venue: "ICLR 2026 Workshop (RSI, spotlight)"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2601.14525", code: "https://github.com/NoviScl/Automated-AI-Researcher"}
+  access: open
+  note: "Automated executor runs LLM ideas as parallel GPU experiments; evolution and RL on feedback."
+
+- title: "AI Research Agents for Machine Learning: Search, Exploration, and Generalization in MLE-bench"
+  year: 2025
+  month: 7
+  venue: "arXiv"
+  org: Meta
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2507.02554", code: "https://github.com/facebookresearch/aira-dojo"}
+  access: open
+  note: "Formalizes research agents as search policies plus operators; framework for MLE-bench agents."
+
+- title: "R&D-Agent: An LLM-Agent Framework Towards Autonomous Data Science"
+  year: 2025
+  month: 5
+  venue: "arXiv"
+  org: Microsoft
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2505.14738", code: "https://github.com/microsoft/RD-Agent"}
+  access: open
+  note: "Decoupled research/development framework formalizing MLE workflow into six components."
+
+- title: "Neural Architecture Discovery via Autonomous Evolution"
+  year: 2025
+  month: 7
+  venue: "COLM 2026"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2507.18074", code: "https://github.com/GAIR-NLP/ASI-Arch"}
+  access: open
+  note: "Closed-loop architecture research: 1,773 autonomous experiments, 105 SOTA linear-attention designs."
+
+- title: "Kosmos: An AI Scientist for Autonomous Discovery"
+  year: 2025
+  month: 11
+  venue: "arXiv"
+  org: Edison Scientific
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2511.02824", blog: "https://edisonscientific.com/news/announcing-kosmos"}
+  access: closed
+  note: "Structured world model coordinates 200 agent rollouts per run for 12-hour discovery."
+
+- title: "DeepScientist: Advancing Frontier-Pushing Scientific Findings Progressively"
+  year: 2025
+  month: 9
+  venue: "arXiv"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2509.26603", code: "https://github.com/ResearAI/DeepScientist"}
+  access: open
+  note: "Month-long goal-directed discovery framed as Bayesian optimization with hierarchical evaluation."
+
+- title: "Auto Research with Specialist Agents Develops Effective and Non-Trivial Training Recipes"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2605.05724", code: "https://github.com/cxcscmu/Auto-Research-Recipes"}
+  access: open
+  note: "Specialist agents share measured lineage; loop yields auditable proposal-diff-score trajectories."
+
+- title: "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery"
+  year: 2026
+  month: 6
+  venue: "arXiv"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2606.13662", code: "https://github.com/THU-Team-Eureka/EurekAgent"}
+  access: open
+  note: "Environment engineering (permissions, artifacts, collaboration) for metric-driven autonomous discovery."
+
+# ------------------------------------------------------------------ loops.selfmod
+- title: "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators"
+  year: 2026
+  month: 6
+  venue: "arXiv"
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2606.26294"}
+  access: paper
+  note: "Co-evolves agents and learned evaluators under controlled, non-stationary utilities."
+
+- title: "Live-SWE-agent: Can Software Engineering Agents Self-Evolve on the Fly?"
+  year: 2025
+  month: 11
+  venue: "arXiv"
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2511.13646", code: "https://github.com/OpenAutoCoder/live-swe-agent", project: "https://live-swe-agent.github.io"}
+  access: open
+  note: "Starts from a bash-only scaffold and evolves its own scaffold during runtime."
+
+# ------------------------------------------------------------------ loops.selfplay
+- title: "Toward Training Superintelligent Software Agents through Self-Play SWE-RL"
+  year: 2025
+  month: 12
+  venue: "ICML 2026"
+  section: loops.selfplay
+  links: {paper: "https://arxiv.org/abs/2512.18552"}
+  access: paper
+  note: "Single agent self-plays bug injection and repair in sandboxed repos, no human issues."
+
+# ------------------------------------------------------------------ measurement.automation
+- title: "Measuring AI R&D Automation"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2603.03992"}
+  access: paper
+  note: "Proposes metrics tracking extent and consequences of AI R&D automation beyond benchmarks."
+
+- title: "AI Researchers' Views on Automating AI R&D and Intelligence Explosions"
+  year: 2026
+  month: 2
+  venue: "arXiv"
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2603.03338"}
+  access: paper
+  note: "Interviews 25 frontier-lab and academic researchers on automating AI R&D."
+
+- title: "On the estimation and validity of AI time horizons---a statistical look at the METR plot"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2610.12466"}
+  access: paper
+  note: "Re-estimates METR time horizons with splines and IRT on 228 tasks, 26 AIs."
+
+- title: "HCAST: Human-Calibrated Autonomy Software Tasks"
+  year: 2025
+  month: 3
+  venue: "arXiv"
+  org: METR
+  section: measurement.automation
+  links: {paper: "https://arxiv.org/abs/2503.17354", code: "https://github.com/METR/hcast-public"}
+  access: open
+  note: "189 autonomy tasks with 563 human baselines grounding agent performance in human time."
+
+# ------------------------------------------------------------------ measurement.theory
+- title: "Will Compute Bottlenecks Prevent an Intelligence Explosion?"
+  year: 2025
+  month: 7
+  venue: "arXiv"
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2507.23181"}
+  access: paper
+  note: "Estimates compute-labor substitutability at four labs to assess software-only intelligence explosion."
+
+- title: "What if automating AI R&D triggers an intelligence explosion?"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2609.36054"}
+  access: paper
+  note: "Assesses evidence that automating AI R&D could trigger explosion; proposes policy responses."
+
+- title: "Audit the Scaffold, Not the Checkpoint: A Stationarity Dichotomy for Recursive Self-Improvement in Agentic Coding"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2609.34924"}
+  access: paper
+  note: "Self-modification hits diminishing returns unless the reachable edit set expands."
+
+- title: "Does Failure Feedback Direct Agent Self-Modification?"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2610.14662"}
+  access: paper
+  note: "Finds no target-specific repair advantage across 145 Darwin Godel Machine modifications."
+
+# ------------------------------------------------------------------ physical
+- title: "An AI-native experimental laboratory for autonomous biomolecular engineering"
+  year: 2025
+  month: 7
+  venue: "arXiv"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2507.02379"}
+  access: paper
+  note: "Multi-user autonomous biomolecular lab co-designing models, experiments and instruments."
+
+- title: "Stress-testing large language model agents in a robotic chemistry laboratory"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2607.23045"}
+  access: paper
+  note: "45 robotic workstations exposed as skills; 4,608 trials measure physical scientific agency."
+
+- title: "La Agente Óptima: Towards Agentic Self-Driving Laboratories"
+  year: 2026
+  month: 9
+  venue: "arXiv"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2609.04564", code: "https://github.com/the-matter-lab/La-Agente-Optima-artifacts"}
+  access: open
+  note: "Agent builds and supervises auditable Bayesian-optimization campaigns on physical SDL platforms."
+
+- title: "NIMO Controller: a self-driving laboratory orchestrator based on the Model Context Protocol"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2605.15227", code: "https://github.com/NIMS-DA/nimo-controller"}
+  access: open
+  note: "Self-driving lab orchestrator exposing SDL components to AI agents via MCP."
+
+- title: "Compressing the Validation Bottleneck: An Agentic Self-Driving Lab for Scientific Discovery"
+  year: 2026
+  month: 7
+  venue: "ICML 2026 Workshop (AI for Science)"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2607.04508"}
+  access: paper
+  note: "Agent targets self-driving-lab bottlenecks: experiment rounds and per-experiment cost."
+
+- title: "Benchmarking Autonomy in Scientific Experiments: A Hierarchical Taxonomy for Autonomous Large-Scale Facilities"
+  year: 2026
+  month: 1
+  venue: "arXiv"
+  section: physical
+  links: {paper: "https://arxiv.org/abs/2601.06978"}
+  access: paper
+  note: "Six-level autonomy taxonomy for benchmarking autonomous experiments at large user facilities."
+
+# ------------------------------------------------------------------ state.archive
+- title: "The Last Human-Written Paper: Agent-Native Research Artifacts"
+  year: 2026
+  month: 4
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2604.24658", code: "https://github.com/ARA-Labs/Agent-Native-Research-Artifact"}
+  access: open
+  note: "Machine-executable research package: logic, code, exploration graph incl. failures, evidence."
+
+- title: "XScientist: A Git-Like Research Protocol for Long-Running Autonomous Scientific Discovery"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2607.12301", code: "https://github.com/smileformylove/XScientist"}
+  access: open
+  note: "Git-like protocol storing hypotheses, attempts, claims as content-addressed exploration graph."
+
+- title: "ExecWeave: Cross-Layer Execution Provenance for Observable Agentic Software"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2610.21146", code: "https://github.com/Irish-kw/ExecWeave"}
+  access: open
+  note: "Cross-layer execution provenance graph linking agent actions to OS-observed effects."
+
+- title: "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2610.30042"}
+  access: paper
+  note: "Lineage-aware context records edit outcomes to guide budget-efficient harness evolution."
+
+- title: "LEVI: Stronger Search Architectures Can Substitute for Larger LLMs in Evolutionary Search"
+  year: 2026
+  month: 5
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2605.09764", code: "https://github.com/ttanv/levi"}
+  access: open
+  note: "Diversity-preserving solution database, model router, proxy benchmark for cheaper evolutionary search."
+
+# ------------------------------------------------------------------ state.memory
+- title: "Memento-Skills: Let Agents Design Agents"
+  year: 2026
+  month: 3
+  venue: "arXiv"
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2603.18743", code: "https://github.com/Memento-Teams/Memento-Skills"}
+  access: open
+  note: "Agent-designing agent with persistent, evolving markdown skill memory via memory-based RL."
+
+- title: "Learning to Continually Learn via Meta-learning Agentic Memory Designs"
+  year: 2026
+  month: 2
+  venue: "ICLR 2026 Workshop (RSI, oral)"
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2602.07755", code: "https://github.com/zksha/alma"}
+  access: open
+  note: "Meta-learns agentic memory designs as code instead of hand-crafting them."
+
+- title: "Reinforcement Learning for Self-Improving Agent with Skill Library"
+  year: 2025
+  month: 12
+  venue: "arXiv"
+  org: Amazon
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2512.17102", code: "https://github.com/amazon-science/SAGE"}
+  access: open
+  note: "Skill-augmented GRPO: sequential rollouts accumulate a skill library across task chains."
+
+- title: "SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles"
+  year: 2026
+  month: 10
+  venue: "NeurIPS 2026"
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2610.09832", code: "https://github.com/YuyaoGe/SkillForge"}
+  access: open
+  note: "Fitness-driven skill lifecycle (trial, active, stable, retired) co-evolved with agentic RL."
+
+- title: "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: state.memory
+  links: {paper: "https://arxiv.org/abs/2610.11781"}
+  access: paper
+  note: "Skills as versioned, falsifiable contracts; library revised from outcome-contract disagreements."
+
+# ------------------------------------------------------------------ surveys
+- title: "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops"
+  year: 2026
+  month: 7
+  venue: "arXiv"
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2607.07663", code: "https://github.com/deepgrounding/recursive-self-improvement"}
+  access: open
+  note: "Sorts 1,250 papers by improvement target and by how closed the loop is."
+
+- title: "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey"
+  year: 2025
+  month: 9
+  venue: "TMLR"
+  section: surveys
+  links: {paper: "https://arxiv.org/abs/2509.02547", code: "https://github.com/HHHHHejia/Awesome-AgenticLLM-RL-Papers"}
+  access: open
+  note: "Survey formalizing agentic RL as POMDPs; compiles environments, frameworks and benchmarks."
+
+# ================================================================== extra RSI-specific papers
+- title: "Accelerating scientific discovery with Co-Scientist"
+  name: Co-Scientist
+  year: 2025
+  month: 2
+  venue: arXiv
+  org: Google
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2502.18864", blog: "https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/"}
+  access: closed
+  note: "Gemini multi-agent system that generates, debates and ranks hypotheses in a tournament."
+
+- title: "Robin: A multi-agent system for automating scientific discovery"
+  year: 2025
+  month: 5
+  venue: arXiv
+  org: FutureHouse
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2505.13400", code: "https://github.com/Future-House/robin"}
+  access: open
+  note: "Chains literature search, hypothesis generation, experiment design and data analysis in one workflow."
+
+- title: "R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weights SWE Agents"
+  year: 2025
+  month: 4
+  venue: arXiv
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2504.07164", code: "https://github.com/R2E-Gym/R2E-Gym", project: "https://r2e-gym.github.io/"}
+  access: open
+  note: "Procedurally curated executable SWE environments plus hybrid execution and execution-free verifiers."
+
+- title: "Ctrl-Z: Controlling AI Agents via Resampling"
+  year: 2025
+  month: 4
+  venue: arXiv
+  org: Redwood Research
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2504.10374", project: "https://bashcontrol.com"}
+  access: paper
+  note: "First control evaluation in an agent setting (BashBench); resampling suspicious actions cuts attack success."
+
+- title: "Bootstrapped Monitoring: Leveraging Transparent Reasoning to Oversee Stronger AI Agents"
+  year: 2026
+  month: 6
+  venue: arXiv
+  section: control.oversight
+  links: {paper: "https://arxiv.org/abs/2606.11998"}
+  access: paper
+  note: "Inserts a stronger intermediate monitor so trusted monitoring survives a growing capability gap."
+
+- title: "GATE: An Integrated Assessment Model for AI Automation"
+  year: 2025
+  month: 3
+  venue: arXiv
+  org: Epoch AI
+  section: measurement.theory
+  links: {paper: "https://arxiv.org/abs/2503.04941"}
+  access: paper
+  note: "Integrated economic model of compute investment, AI automation and growth."
+
+- title: "EnvCraft: Synthesizing Executable Environments in Agentic RL for Claw-like Agent"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: evaluation.factory
+  links: {paper: "https://arxiv.org/abs/2609.05576"}
+  access: paper
+  note: "Synthesises stateful, executable workspaces to relieve the environment shortage in agentic RL."
+
+- title: "Dream-RSI: Recursive Self-Improvement through Evolving Worlds"
+  year: 2026
+  month: 9
+  venue: arXiv
+  section: loops.evolve
+  links: {paper: "https://arxiv.org/abs/2609.14858"}
+  access: paper
+  note: "Replays past discovery trees as a cheap simulator to refine the exploration policy before redeploying it."
+
+- title: "SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2610.20431"}
+  access: paper
+  note: "Mutates and recombines hypotheses and program parts across a swarm of research agents."
+
+- title: "RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent"
+  year: 2026
+  month: 10
+  venue: arXiv
+  section: loops.selfmod
+  links: {paper: "https://arxiv.org/abs/2610.21791"}
+  access: paper
+  note: "Diagnoses the current bottleneck, picks a component-specific improvement workflow, and evolves its own harness."
+
+# ================================================================== industry & open-source sweep
+
+# ------------------------------------------------------------------ control.incidents
+- title: "Our updated Preparedness Framework"
+  year: 2025
+  month: 4
+  venue: Report
+  org: "OpenAI"
+  section: control.incidents
+  links: {blog: "https://openai.com/index/updating-our-preparedness-framework/"}
+  access: closed
+  note: "Makes AI Self-improvement a Tracked Category requiring safeguards at High capability."
+
+- title: "Strengthening our Frontier Safety Framework"
+  year: 2025
+  month: 9
+  venue: Report
+  org: "Google DeepMind"
+  section: control.incidents
+  links: {blog: "https://deepmind.google/blog/strengthening-our-frontier-safety-framework/", docs: "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf"}
+  access: closed
+  note: "Defines ML R&D acceleration and automation CCLs; April 2026 update adds tracked capability levels."
+
+- title: "Common Elements of Frontier AI Safety Policies (December 2025 Update)"
+  year: 2025
+  month: 12
+  venue: Report
+  org: "METR"
+  section: control.incidents
+  links: {blog: "https://metr.org/blog/2025-12-09-common-elements-of-frontier-ai-safety-policies/"}
+  access: closed
+  note: "Compares lab safety policies' capability thresholds, including automated AI R&D, and evaluation commitments."
+
+- title: "The AI policy window is open. We need to act."
+  year: 2026
+  month: 9
+  venue: Blog
+  org: "OpenAI"
+  section: control.incidents
+  links: {blog: "https://openai.com/index/ai-policy-window/"}
+  access: closed
+  note: "Says fully autonomous RSI \"is not happening today\"; asks for safety evidence and shared standards first."
+
+- title: "Incident Report: unsanctioned agent behaviour during cyber testing"
+  year: 2026
+  month: 8
+  venue: Incident report
+  org: "UK AI Security Institute"
+  section: control.incidents
+  links: {blog: "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"}
+  access: closed
+  note: "In 10 of 122 internet-enabled eval runs, agents took unsanctioned actions on real targets."
+
+- title: "Investigating three incidents in our cybersecurity evaluations"
+  year: 2026
+  month: 7
+  venue: Incident report
+  org: "Anthropic"
+  section: control.incidents
+  links: {blog: "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"}
+  access: closed
+  note: "Claude reached the internet from eval environments and accessed three organizations' real systems."
+
+- title: "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident"
+  year: 2026
+  month: 8
+  venue: Incident report
+  org: "METR & Redwood Research"
+  section: control.incidents
+  links: {blog: "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"}
+  access: closed
+  note: "External review: agents coordinated a multi-day hack via a shared unsanctioned message board."
+
+- title: "Uncovering a universal offline sandbox escape"
+  year: 2026
+  month: 8
+  venue: Incident report
+  org: "Prime Intellect"
+  section: control.incidents
+  links: {blog: "https://www.primeintellect.ai/blog/universal-offline-sandbox-escape"}
+  access: closed
+  note: "Models bypassed offline eval sandboxes via inference-API remote fetch; fixes coordinated across frameworks."
+
+# ------------------------------------------------------------------ control.oversight
+- title: "How we monitor internal coding agents for misalignment"
+  year: 2026
+  month: 3
+  venue: Blog
+  org: "OpenAI"
+  section: control.oversight
+  links: {blog: "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/"}
+  access: closed
+  note: "GPT-5.4-based monitor reviews internal coding-agent activity to flag misaligned behavior."
+
+- title: "A Practical Approach to Verifying Code at Scale"
+  year: 2025
+  month: 12
+  venue: Report
+  org: "OpenAI"
+  section: control.oversight
+  links: {blog: "https://alignment.openai.com/scaling-code-verification/"}
+  access: closed
+  note: "Trained AI review agent, optimized for precision, as output monitor for autonomous code generation."
+
+- title: "Running Codex safely at OpenAI"
+  year: 2026
+  month: 5
+  venue: Blog
+  org: "OpenAI"
+  section: control.oversight
+  links: {blog: "https://openai.com/index/running-codex-safely/"}
+  access: closed
+  note: "Managed configuration, constrained execution, network policies and agent-native logs for internal Codex."
+
+- title: "How we built Claude Code auto mode: a safer way to skip permissions"
+  year: 2026
+  month: 3
+  venue: Blog
+  org: "Anthropic"
+  section: control.oversight
+  links: {blog: "https://www.anthropic.com/research/claude-code-auto-mode"}
+  access: closed
+  note: "Classifiers auto-decide agent permission requests; users had approved 93% of prompts."
+
+- title: "Introducing ControlArena: A library for running AI control experiments"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "UK AISI & Redwood Research"
+  section: control.oversight
+  links: {code: "https://github.com/UKGovernmentBEIS/control-arena", blog: "https://www.aisi.gov.uk/blog/introducing-controlarena-a-library-for-running-ai-control-experiments"}
+  access: open
+  note: "Inspect-based settings, model organisms and protocols for repeatable AI control experiments."
+
+- title: "Red-Teaming Anthropic's Internal Agent Monitoring Systems"
+  year: 2026
+  month: 3
+  venue: Report
+  org: "METR"
+  section: control.oversight
+  links: {blog: "https://metr.org/blog/2026-03-25-red-teaming-anthropic-agent-monitoring/"}
+  access: closed
+  note: "Three-week external red-team of Anthropic's internal agent monitoring found novel vulnerabilities."
+
+- title: "Red-Teaming OpenAI's Internal Agent Monitoring Systems"
+  year: 2026
+  month: 10
+  venue: Report
+  org: "METR & Redwood Research"
+  section: control.oversight
+  links: {blog: "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"}
+  access: closed
+  note: "Three-week stress test of OpenAI's internal misalignment monitor; pilot for deep external access."
+
+# ------------------------------------------------------------------ control.threat
+- title: "How we contain Claude across products"
+  year: 2026
+  month: 5
+  venue: Blog
+  org: "Anthropic"
+  section: control.threat
+  links: {blog: "https://www.anthropic.com/research/how-we-contain-claude"}
+  access: closed
+  note: "Containment patterns capping agent blast radius across claude.ai, Claude Code and Cowork."
+
+# ------------------------------------------------------------------ evaluation.factory
+- title: "Environments Hub: A Community Hub To Scale RL To Open AGI"
+  year: 2025
+  month: 8
+  venue: Product
+  org: "Prime Intellect"
+  section: evaluation.factory
+  links: {code: "https://github.com/PrimeIntellect-ai/verifiers", blog: "https://www.primeintellect.ai/blog/environments"}
+  access: open
+  note: "Open community hub of RL environments and evals built on the verifiers library."
+
+# ------------------------------------------------------------------ evaluation.harness
+- title: "Building the Open Agent Ecosystem Together: Introducing OpenEnv"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Meta PyTorch & Hugging Face"
+  section: evaluation.harness
+  links: {code: "https://github.com/openenv/OpenEnv", blog: "https://huggingface.co/blog/openenv"}
+  access: open
+  note: "Gymnasium-style reset/step/state API; environments ship as Docker images or HF Spaces."
+
+- title: "NeMo Gym: Evaluate and improve models and agents using environments"
+  year: 2025
+  month: 8
+  venue: GitHub
+  org: "NVIDIA"
+  section: evaluation.harness
+  links: {code: "https://github.com/NVIDIA-NeMo/Gym"}
+  access: open
+  note: "Environments bundle dataset, agent harness and verifier; scales from evaluation to RL training."
+
+# ------------------------------------------------------------------ evaluation.integrity
+- title: "Quantifying infrastructure noise in agentic coding evals"
+  year: 2026
+  month: 2
+  venue: Blog
+  org: "Anthropic"
+  section: evaluation.integrity
+  links: {blog: "https://www.anthropic.com/research/infrastructure-noise"}
+  access: closed
+  note: "Infrastructure configuration alone measurably shifts agentic coding benchmark scores."
+
+- title: "Reward hacking is swamping model intelligence gains"
+  year: 2026
+  month: 6
+  venue: Blog
+  org: "Cursor"
+  section: evaluation.integrity
+  links: {blog: "https://cursor.com/blog/reward-hacking-coding-benchmarks"}
+  access: closed
+  note: "63% of Opus 4.8 Max's successful SWE-bench Pro resolutions retrieved, not derived, fixes."
+
+- title: "MALT: A Dataset of Natural and Prompted Behaviors That Threaten Eval Integrity"
+  year: 2025
+  month: 10
+  venue: Report
+  org: "METR"
+  section: evaluation.integrity
+  links: {blog: "https://metr.org/blog/2025-10-14-malt-dataset-of-natural-and-prompted-behaviors/"}
+  access: closed
+  note: "Manually-reviewed agent transcripts of reward hacking and sandbagging threatening eval integrity."
+
+# ------------------------------------------------------------------ evaluation.kernel
+- title: "Towards Robust Agentic CUDA Kernel Benchmarking, Verification, and Optimization"
+  year: 2025
+  month: 9
+  venue: Blog
+  org: "Sakana AI"
+  section: evaluation.kernel
+  links: {code: "https://github.com/SakanaAI/robust-kbench", blog: "https://sakana.ai/ai-cuda-engineer/"}
+  access: open
+  note: "Kernel benchmark built to close exploitable loopholes in prior kernel-generation benchmarks."
+
+# ------------------------------------------------------------------ execution.runtime
+- title: "Releasing Lab: the training platform for self-improving agents"
+  year: 2026
+  month: 5
+  venue: Product
+  org: "Prime Intellect"
+  section: execution.runtime
+  links: {blog: "https://www.primeintellect.ai/blog/lab-is-open"}
+  access: closed
+  note: "Connects environments, evaluations, hosted RL training, adapter deployment and inference into one loop."
+
+- title: "Scaling Managed Agents: Decoupling the brain from the hands"
+  year: 2026
+  month: 4
+  venue: Blog
+  org: "Anthropic"
+  section: execution.runtime
+  links: {blog: "https://www.anthropic.com/research/managed-agents"}
+  access: closed
+  note: "Hosted long-horizon agent service built on interfaces that stay stable as harnesses change."
+
+# ------------------------------------------------------------------ execution.sandbox
+- title: "Bringing you Agent Sandbox on GKE and Agent Substrate"
+  year: 2026
+  month: 5
+  venue: Product
+  org: "Google Cloud / Kubernetes SIGs"
+  section: execution.sandbox
+  links: {code: "https://github.com/kubernetes-sigs/agent-sandbox", blog: "https://cloud.google.com/blog/products/containers-kubernetes/bringing-you-agent-sandbox-on-gke-and-agent-substrate"}
+  access: open
+  note: "Kubernetes CRD for isolated, stateful singleton agent runtimes and RL workloads; GKE GA."
+
+- title: "Prime Sandboxes: MicroVMs for Agentic RL Training at Scale"
+  year: 2026
+  month: 9
+  venue: Product
+  org: "Prime Intellect"
+  section: execution.sandbox
+  links: {blog: "https://www.primeintellect.ai/blog/sandboxes"}
+  access: closed
+  note: "Full Linux microVMs priced for thousands of concurrent instances during agentic RL training."
+
+- title: "Introducing SWE-1.5: Our Fast Agent Model"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Cognition"
+  section: execution.sandbox
+  links: {code: "https://github.com/CognitionAI/blockdiff", blog: "https://cognition.ai/blog/swe-1-5"}
+  access: closed
+  note: "RL rollouts run on otterlink VM hypervisor scaling to tens of thousands of machines."
+
+- title: "Qwen3-Coder: Agentic Coding in the World"
+  year: 2025
+  month: 7
+  venue: Blog
+  org: "Alibaba Qwen"
+  section: execution.sandbox
+  links: {blog: "https://qwen.ai/blog?id=qwen3-coder"}
+  access: closed
+  note: "Agent RL scaled via a system running 20,000 independent environments in parallel on Alibaba Cloud."
+
+- title: "Beyond permission prompts: making Claude Code more secure and autonomous"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Anthropic"
+  section: execution.sandbox
+  links: {code: "https://github.com/anthropics/sandbox-runtime", blog: "https://www.anthropic.com/research/claude-code-sandboxing"}
+  access: open
+  note: "OS-level filesystem and network isolation lets agents run with fewer permission prompts."
+
+# ------------------------------------------------------------------ execution.train
+- title: "RL at 1T Scale: prime-rl Performance Deep Dive"
+  year: 2026
+  month: 6
+  venue: Blog
+  org: "Prime Intellect"
+  section: execution.train
+  links: {code: "https://github.com/PrimeIntellect-ai/prime-rl", blog: "https://www.primeintellect.ai/blog/rl-at-1t-scale"}
+  access: open
+  note: "Async agentic RL trainer; v0.6 trains trillion-parameter MoE with FP8 and P/D disaggregation."
+
+- title: "How Kimi K2 Achieves Efficient RL Parameter Updates"
+  year: 2025
+  month: 9
+  venue: Blog
+  org: "Moonshot AI"
+  section: execution.train
+  links: {code: "https://github.com/MoonshotAI/checkpoint-engine", blog: "https://moonshotai.github.io/checkpoint-engine/"}
+  access: open
+  note: "In-place weight-update middleware syncing 1T-parameter Kimi K2 to inference engines in ~20s."
+
+- title: "Introducing torchforge – a PyTorch native library for scalable RL post-training and agentic development"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Meta (PyTorch)"
+  section: execution.train
+  links: {code: "https://github.com/meta-pytorch/torchforge", blog: "https://pytorch.org/blog/introducing-torchforge/"}
+  access: open
+  note: "PyTorch-native agentic RL library on Monarch, torchtitan and vLLM; async off-policy training."
+
+- title: "rLLM: Agentic RL on any harness, with any backend, on any benchmark"
+  year: 2025
+  month: 1
+  venue: GitHub
+  org: "rLLM project (rllm-org)"
+  section: execution.train
+  links: {code: "https://github.com/rllm-org/rllm"}
+  access: open
+  note: "Same agent code drives eval and RL; Docker/Daytona/Modal sandboxes; verl/tinker/fireworks backends."
+
+- title: "Composer: Building a fast frontier model with RL"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Cursor"
+  section: execution.train
+  links: {blog: "https://cursor.com/blog/composer"}
+  access: closed
+  note: "Async RL on PyTorch and Ray across hundreds of thousands of concurrent sandboxed environments."
+
+# ------------------------------------------------------------------ industry
+- title: "Introducing Sakana AI’s Recursive Self-Improvement (RSI) Lab"
+  year: 2026
+  month: 6
+  venue: Blog
+  org: "Sakana AI"
+  section: industry
+  links: {blog: "https://sakana.ai/rsi-lab/"}
+  access: closed
+  note: "Tokyo lab extending AI Scientist, DGM and ShinkaEvolve work toward compute-efficient RSI."
+
+- title: "Improving Cursor Tab with online RL"
+  year: 2025
+  month: 9
+  venue: Blog
+  org: "Cursor"
+  section: industry
+  links: {blog: "https://cursor.com/blog/tab-rl"}
+  access: closed
+  note: "Online policy-gradient RL: ships new Tab models many times daily, trains on user feedback."
+
+# ------------------------------------------------------------------ loops.evolve
+- title: "AlphaEvolve is available for everyone"
+  year: 2026
+  month: 7
+  venue: Product
+  org: "Google Cloud / Google DeepMind"
+  section: loops.evolve
+  links: {blog: "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-is-available-for-everyone"}
+  access: closed
+  note: "Gemini-based code optimization and discovery agent made generally available as a cloud service."
+
+# ------------------------------------------------------------------ loops.research
+- title: "Accelerating scientific discovery with AI-powered Empirical Research Assistance"
+  year: 2025
+  month: 9
+  venue: Blog
+  org: "Google Research"
+  section: loops.research
+  links: {blog: "https://research.google/blog/accelerating-scientific-discovery-with-ai-powered-empirical-software/"}
+  access: closed
+  note: "Implements ideas as executable code and tree-searches thousands of variants to optimize performance."
+
+- title: "MLE-STAR: A state-of-the-art machine learning engineering agent"
+  year: 2025
+  month: 8
+  venue: Blog
+  org: "Google Cloud / Google Research"
+  section: loops.research
+  links: {blog: "https://research.google/blog/mle-star-a-state-of-the-art-machine-learning-engineering-agents/"}
+  access: closed
+  note: "Web search for candidate models plus targeted refinement of individual pipeline code blocks."
+
+- title: "Zochi Technical Report"
+  year: 2025
+  month: 3
+  venue: Report
+  org: "Intology"
+  section: loops.research
+  links: {blog: "https://www.intology.ai/blog/zochi-tech-report"}
+  access: closed
+  note: "Claims autonomous end-to-end research from hypothesis generation to peer-reviewed publication."
+
+- title: "Meet Carl: The First AI System To Produce Academically Peer-Reviewed Research"
+  year: 2025
+  month: 3
+  venue: Blog
+  org: "Autoscience Institute"
+  section: loops.research
+  links: {blog: "https://www.autoscience.ai/blog/meet-carl"}
+  access: closed
+  note: "Ideates hypotheses, writes and runs experiment code, then writes the paper."
+
+- title: "Automated researchers can reliably mitigate alignment failures"
+  year: 2026
+  month: 8
+  venue: Report
+  org: "Anthropic"
+  section: loops.research
+  links: {blog: "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures"}
+  access: closed
+  note: "Claude autonomously trained models fixing 10 alignment-failure benchmarks without degrading capabilities."
+
+# ------------------------------------------------------------------ loops.selfmod
+- title: "MiniMax M2.7: Early Echoes of Self-Evolution"
+  year: 2026
+  month: 3
+  venue: Blog
+  org: "MiniMax"
+  section: loops.selfmod
+  links: {blog: "https://www.minimax.io/news/minimax-m27-en"}
+  access: closed
+  note: "Model ran 100+ rounds of analyze-failures, edit scaffold, evaluate, keep-or-revert on itself."
+
+# ------------------------------------------------------------------ measurement.automation
+- title: "Time Horizon 1.1"
+  year: 2026
+  month: 1
+  venue: Report
+  org: "METR"
+  section: measurement.automation
+  links: {blog: "https://metr.org/blog/2026-01-29-time-horizon-1-1/"}
+  access: closed
+  note: "Task suite grown from 170 to 228 tasks; eval infrastructure moved from Vivaria to Inspect."
+
+- title: "Expenditure Horizon: Measuring Optimization Ability, with an Application to NanoGPT"
+  year: 2026
+  month: 7
+  venue: Report
+  org: "METR"
+  section: measurement.automation
+  links: {blog: "https://metr.org/blog/2026-07-21-expenditure-horizon/"}
+  access: closed
+  note: "Proposes 'expenditure horizon' measure of agent optimization ability, illustrated on NanoGPT speedrun."
+
+- title: "Interviewing AI researchers on automation of AI R&D"
+  year: 2024
+  month: 8
+  venue: Report
+  org: "Epoch AI"
+  section: measurement.automation
+  links: {blog: "https://epoch.ai/publications/interviewing-ai-researchers-on-automation-of-ai-rnd"}
+  access: closed
+  note: "Interviews AI researchers on which R&D tasks AI will automate and evaluations needed."
+
+- title: "Can AI automate AI R&D yet?"
+  year: 2026
+  month: 10
+  venue: Report
+  org: "Epoch AI"
+  section: measurement.automation
+  links: {blog: "https://epoch.ai/publications/innovationeval"}
+  access: closed
+  note: "Tests whether agents given early-2026 knowledge discover novel ML methods; early evidence: no."
+
+- title: "How AI is transforming work at Anthropic"
+  year: 2025
+  month: 12
+  venue: Report
+  org: "Anthropic"
+  section: measurement.automation
+  links: {blog: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"}
+  access: closed
+  note: "Survey of 132 Anthropic engineers and researchers plus interviews on Claude's effect on work."
+
+- title: "Measuring AI agent autonomy in practice"
+  year: 2026
+  month: 2
+  venue: Report
+  org: "Anthropic"
+  section: measurement.automation
+  links: {blog: "https://www.anthropic.com/research/measuring-agent-autonomy"}
+  access: closed
+  note: "Millions of Claude Code/API interactions: longest autonomous turns grew from <25 to >45 minutes."
+
+- title: "Measuring Autonomous AI Research"
+  year: 2026
+  month: 8
+  venue: Report
+  org: "Prime Intellect"
+  section: measurement.automation
+  links: {blog: "https://www.primeintellect.ai/blog/measuring-autonomous-research"}
+  access: closed
+  note: "153 autonomous runs across 18 frontier models on the nanoGPT optimizer speedrun."
+
+- title: "GPT-5.6 Preview System Card"
+  year: 2026
+  month: 8
+  venue: Report
+  org: "OpenAI"
+  section: measurement.automation
+  links: {docs: "https://deploymentsafety.openai.com/gpt-5-6-preview/ai-self-improvement-capabilities"}
+  access: closed
+  note: "Self-improvement evals: research debugging, KernelGen, NanoGPT, PostTrainBench Lite, MLE-Bench Revised."
+
+# ------------------------------------------------------------------ physical
+- title: "Building Labs that Learn"
+  year: 2026
+  month: 9
+  venue: Blog
+  org: "Periodic Labs"
+  section: physical
+  links: {blog: "https://periodic.com/news/building-labs-that-learn"}
+  access: closed
+  note: "Periodic Neon, a post-trained 1T-parameter model, analyzes experiments in its physical labs."
+
+- title: "How an AI-run lab cracked open green hydrogen's catalyst problem"
+  year: 2026
+  month: 9
+  venue: Blog
+  org: "Lila Sciences"
+  section: physical
+  links: {blog: "https://www.lila.ai/news/how-an-ai-run-lab-cracked-open-green-hydrogens-catalyst-problem"}
+  access: closed
+  note: "AI-directed lab proposed, synthesized and screened 2,942 catalysts in three months."
+
+- title: "Strengthening our partnership with the UK government to support prosperity and security in the AI era"
+  year: 2025
+  month: 12
+  venue: Blog
+  org: "Google DeepMind"
+  section: physical
+  links: {blog: "https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/"}
+  access: closed
+  note: "Announces Google DeepMind's first automated laboratory, focused on materials science, in 2026."
+
+- title: "GPT-5 lowers the cost of cell-free protein synthesis"
+  year: 2026
+  month: 2
+  venue: Blog
+  org: "OpenAI & Ginkgo Bioworks"
+  section: physical
+  links: {blog: "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/"}
+  access: closed
+  note: "Closed-loop GPT-5 plus Ginkgo cloud lab tested 36,000+ reaction compositions over six rounds."
+
+# ------------------------------------------------------------------ state.archive
+- title: "Redesigning source control at Anthropic"
+  year: 2026
+  month: 10
+  venue: Blog
+  org: "Anthropic"
+  section: state.archive
+  links: {blog: "https://www.anthropic.com/research/redesigning-source-control"}
+  access: closed
+  note: "In-house version control built after daily merges grew from 2,500 to over 30,000."
+
+- title: "Git at any scale"
+  year: 2026
+  month: 8
+  venue: Blog
+  org: "Cursor"
+  section: state.archive
+  links: {blog: "https://cursor.com/blog/git-at-any-scale"}
+  access: closed
+  note: "Replicated Git backend built for agents creating vast numbers of small, throwaway repositories."
+
+- title: "Effective harnesses for long-running agents"
+  year: 2025
+  month: 11
+  venue: Blog
+  org: "Anthropic"
+  section: state.archive
+  links: {blog: "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"}
+  access: closed
+  note: "Initializer agent plus incremental coding agent leave artifacts carrying progress across context windows."
+
+# ------------------------------------------------------------------ state.memory
+- title: "Equipping agents for the real world with Agent Skills"
+  year: 2025
+  month: 10
+  venue: Blog
+  org: "Anthropic"
+  section: state.memory
+  links: {code: "https://github.com/anthropics/skills", blog: "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"}
+  access: open
+  note: "Skills as folders of instructions, scripts and resources agents load on demand."
