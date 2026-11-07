@@ -2654,3 +2654,12 @@
   links: {code: "https://github.com/anthropics/skills", blog: "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"}
   access: open
   note: "Skills as folders of instructions, scripts and resources agents load on demand."
+
+- title: "agent-qa: persistent QA memory with validated self-improvement"
+  year: 2026
+  venue: Product
+  org: vostride
+  section: state.memory
+  links: {code: "https://github.com/vostride/agent-qa", project: "https://vostride.com", docs: "https://vostride.com/docs/agent-qa/self-improvement"}
+  access: open
+  note: "memidex retains evidence-validated facts and procedures from web/mobile QA runs for reuse; local runs promote accepted lessons, while CI proposes them. Released under FSL-1.1-ALv2."
