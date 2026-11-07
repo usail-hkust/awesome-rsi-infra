@@ -488,13 +488,14 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 </details>
 
 <details open>
-<summary><b>V.2&ensp;Experience, skills & memory</b> <sub>(7)</sub></summary>
+<summary><b>V.2&ensp;Experience, skills & memory</b> <sub>(8)</sub></summary>
 
 | Year | Title | Venue / Org | Links | Access | Why it matters for infra |
 |---:|---|---|---|:-:|---|
 | 2025 | **ReasoningBank**: Scaling Agent Self-Evolving with Reasoning Memory | ICLR 2026<br><sub>Google</sub> | [paper](https://arxiv.org/abs/2509.25140) · [code](https://github.com/google-research/reasoning-bank) | `OPEN` | Distils successes and failures into reusable strategy memories read at test time. |
 | 2025 | Equipping agents for the real world with Agent Skills | Blog<br><sub>Anthropic</sub> | [code](https://github.com/anthropics/skills) · [blog](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills) | `OPEN` | Skills as folders of instructions, scripts and resources agents load on demand. |
 | 2025 | Reinforcement Learning for Self-Improving Agent with Skill Library | arXiv<br><sub>Amazon</sub> | [paper](https://arxiv.org/abs/2512.17102) · [code](https://github.com/amazon-science/SAGE) | `OPEN` | Skill-augmented GRPO: sequential rollouts accumulate a skill library across task chains. |
+| 2026 | **agent-qa**: persistent QA memory with validated self-improvement | Product<br><sub>vostride</sub> | [code](https://github.com/vostride/agent-qa) · [project](https://vostride.com) · [docs](https://vostride.com/docs/agent-qa/self-improvement) | `OPEN` | memidex retains evidence-validated facts and procedures from web/mobile QA runs for reuse; local runs promote accepted lessons, while CI proposes them. Released under FSL-1.1-ALv2. |
 | 2026 | Learning to Continually Learn via Meta-learning Agentic Memory Designs | ICLR 2026 Workshop (RSI, oral) | [paper](https://arxiv.org/abs/2602.07755) · [code](https://github.com/zksha/alma) | `OPEN` | Meta-learns agentic memory designs as code instead of hand-crafting them. |
 | 2026 | **Memento-Skills**: Let Agents Design Agents | arXiv | [paper](https://arxiv.org/abs/2603.18743) · [code](https://github.com/Memento-Teams/Memento-Skills) | `OPEN` | Agent-designing agent with persistent, evolving markdown skill memory via memory-based RL. |
 | 2026 | **Skill-V**: Verifiable Self-Evolving Skill Library for Interactive Agents | arXiv | [paper](https://arxiv.org/abs/2610.11781) | `PAPER` | Skills as versioned, falsifiable contracts; library revised from outcome-contract disagreements. |
