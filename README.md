@@ -256,7 +256,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 </details>
 
 <details open>
-<summary><b>II.5&ensp;Automated research systems</b> <sub>(23)</sub></summary>
+<summary><b>II.5&ensp;Automated research systems</b> <sub>(24)</sub></summary>
 
 | Year | Title | Venue / Org | Links | Access | Why it matters for infra |
 |---:|---|---|---|:-:|---|
@@ -278,6 +278,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 | 2026 | **helix**: autonomous research loops, reproducible, shareable, verifiable | GitHub<br><sub>Vector Institute</sub> | [code](https://github.com/VectorInstitute/helix) | `OPEN` | Generalises the autoresearch loop to arbitrary research questions. |
 | 2026 | Automated Weak-to-Strong Researcher | Blog<br><sub>Anthropic</sub> | [blog](https://alignment.anthropic.com/2026/automated-w2s-researcher/) | `CLOSED` | Agents run an alignment research agenda end to end; cost and agent-hours reported. |
 | 2026 | Auto Research with Specialist Agents Develops Effective and Non-Trivial Training Recipes | arXiv | [paper](https://arxiv.org/abs/2605.05724) · [code](https://github.com/cxcscmu/Auto-Research-Recipes) | `OPEN` | Specialist agents share measured lineage; loop yields auditable proposal-diff-score trajectories. |
+| 2026 | **Agon**: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy | arXiv | [paper](https://arxiv.org/abs/2606.24177) · [code](https://github.com/AutoResearch-Factory/Agon) | `OPEN` | Reusable generate-review loops take idea to paper; 18 roles in 230.6 KiB of prompts, run across 10+ fields. |
 | 2026 | **EurekAgent**: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery | arXiv | [paper](https://arxiv.org/abs/2606.13662) · [code](https://github.com/THU-Team-Eureka/EurekAgent) | `OPEN` | Environment engineering (permissions, artifacts, collaboration) for metric-driven autonomous discovery. |
 | 2026 | **first-steps-toward-automated-ai-research**: research artifacts from Recursive's automated AI research system | GitHub<br><sub>Recursive</sub> | [code](https://github.com/recursive-org/first-steps-toward-automated-ai-research) | `OPEN` | Released training scripts and kernels found by a closed automated research system. |
 | 2026 | Automated researchers can reliably mitigate alignment failures | Report<br><sub>Anthropic</sub> | [blog](https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures) | `CLOSED` | Claude autonomously trained models fixing 10 alignment-failure benchmarks without degrading capabilities. |
@@ -386,7 +387,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 </details>
 
 <details open>
-<summary><b>IV.2&ensp;AI research & ML engineering benchmarks</b> <sub>(20)</sub></summary>
+<summary><b>IV.2&ensp;AI research & ML engineering benchmarks</b> <sub>(21)</sub></summary>
 
 | Year | Title | Venue / Org | Links | Access | Why it matters for infra |
 |---:|---|---|---|:-:|---|
@@ -410,6 +411,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 | 2026 | **EvalResearchBench**: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement? | arXiv | [paper](https://arxiv.org/abs/2610.04184) · [code](https://github.com/Mercury7353/self-evaluation-bench) · [project](https://mercury7353.github.io/self-evaluation-bench) | `OPEN` | Tests whether agents can build cheap executable evaluators that track full benchmarks. |
 | 2026 | **MLOps-Bench**: Benchmarking AI Agents on Production ML Engineering in Real Repositories | arXiv<br><sub>Oracle</sub> | [paper](https://arxiv.org/abs/2610.23506) · [code](https://github.com/oracle-samples/mlops-bench) | `OPEN` | Executable lifecycle changes inside real production ML repositories: pipelines, serving, monitoring, CI. |
 | 2026 | **MMPostTrainBench**: Benchmarking Autonomous Research for Multimodal Post-Training | arXiv | [paper](https://arxiv.org/abs/2610.05398) · [code](https://github.com/sod1010/MMPostTrainBench) | `OPEN` | Eight image, audio and video post-training tasks for autonomous research agents. |
+| 2026 | **SciΠvot**: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents | arXiv | [paper](https://arxiv.org/abs/2610.21082) · [code](https://github.com/AutoResearch-Factory/SciPIvot) | `OPEN` | 248 human-corrected research decisions from 26 agent-run projects; best model 63.5% vs 73.4% for fresh researchers. |
 
 </details>
 
@@ -472,7 +474,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 > Keeping accepted changes, with their evidence, so later rounds can inherit, attribute and roll back.
 
 <details open>
-<summary><b>V.1&ensp;Archives, lineage & trial ledgers</b> <sub>(8)</sub></summary>
+<summary><b>V.1&ensp;Archives, lineage & trial ledgers</b> <sub>(9)</sub></summary>
 
 | Year | Title | Venue / Org | Links | Access | Why it matters for infra |
 |---:|---|---|---|:-:|---|
@@ -480,6 +482,7 @@ These levels are orthogonal to *who* does the work (Epoch's AL0–AL5), *how aut
 | 2026 | **The Last Human-Written Paper**: Agent-Native Research Artifacts | arXiv | [paper](https://arxiv.org/abs/2604.24658) · [code](https://github.com/ARA-Labs/Agent-Native-Research-Artifact) | `OPEN` | Machine-executable research package: logic, code, exploration graph incl. failures, evidence. |
 | 2026 | **LEVI**: Stronger Search Architectures Can Substitute for Larger LLMs in Evolutionary Search | arXiv | [paper](https://arxiv.org/abs/2605.09764) · [code](https://github.com/ttanv/levi) | `OPEN` | Diversity-preserving solution database, model router, proxy benchmark for cheaper evolutionary search. |
 | 2026 | **XScientist**: A Git-Like Research Protocol for Long-Running Autonomous Scientific Discovery | arXiv | [paper](https://arxiv.org/abs/2607.12301) · [code](https://github.com/smileformylove/XScientist) | `OPEN` | Git-like protocol storing hypotheses, attempts, claims as content-addressed exploration graph. |
+| 2026 | **AutoSR**: Automatic Symbolic Regression by Searching Research States | arXiv | [paper](https://arxiv.org/abs/2608.16876) · [code](https://github.com/AutoResearch-Factory/AutoSR) · [project](https://autosr.app) | `OPEN` | Each research state keeps a candidate equation with its reasoning, probes, failed tests and review; descendants inherit it. |
 | 2026 | Git at any scale | Blog<br><sub>Cursor</sub> | [blog](https://cursor.com/blog/git-at-any-scale) | `CLOSED` | Replicated Git backend built for agents creating vast numbers of small, throwaway repositories. |
 | 2026 | **ExecWeave**: Cross-Layer Execution Provenance for Observable Agentic Software | arXiv | [paper](https://arxiv.org/abs/2610.21146) · [code](https://github.com/Irish-kw/ExecWeave) | `OPEN` | Cross-layer execution provenance graph linking agent actions to OS-observed effects. |
 | 2026 | **HGM-Dual**: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning | arXiv | [paper](https://arxiv.org/abs/2610.30042) | `PAPER` | Lineage-aware context records edit outcomes to guide budget-efficient harness evolution. |
