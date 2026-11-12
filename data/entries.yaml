@@ -1251,6 +1251,15 @@
   access: open
   note: "Long-horizon benchmark of reimplementing entire programs from observed behavior alone."
 
+- title: "SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents"
+  year: 2026
+  month: 10
+  venue: "arXiv"
+  section: evaluation.bench
+  links: {paper: "https://arxiv.org/abs/2610.21082", code: "https://github.com/AutoResearch-Factory/SciPIvot"}
+  access: open
+  note: "248 human-corrected research decisions from 26 agent-run projects; best model 63.5% vs 73.4% for fresh researchers."
+
 # ------------------------------------------------------------------ evaluation.factory
 - title: "AutoGym: Blueprint-First Generation of Verifiable Agent Gyms"
   year: 2026
@@ -1668,6 +1677,15 @@
   access: open
   note: "Environment engineering (permissions, artifacts, collaboration) for metric-driven autonomous discovery."
 
+- title: "Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy"
+  year: 2026
+  month: 6
+  venue: "arXiv"
+  section: loops.research
+  links: {paper: "https://arxiv.org/abs/2606.24177", code: "https://github.com/AutoResearch-Factory/Agon"}
+  access: open
+  note: "Reusable generate-review loops take idea to paper; 18 roles in 230.6 KiB of prompts, run across 10+ fields."
+
 # ------------------------------------------------------------------ loops.selfmod
 - title: "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators"
   year: 2026
@@ -1872,6 +1890,15 @@
   links: {paper: "https://arxiv.org/abs/2605.09764", code: "https://github.com/ttanv/levi"}
   access: open
   note: "Diversity-preserving solution database, model router, proxy benchmark for cheaper evolutionary search."
+
+- title: "AutoSR: Automatic Symbolic Regression by Searching Research States"
+  year: 2026
+  month: 8
+  venue: "arXiv"
+  section: state.archive
+  links: {paper: "https://arxiv.org/abs/2608.16876", code: "https://github.com/AutoResearch-Factory/AutoSR", project: "https://autosr.app"}
+  access: open
+  note: "Each research state keeps a candidate equation with its reasoning, probes, failed tests and review; descendants inherit it."
 
 # ------------------------------------------------------------------ state.memory
 - title: "Memento-Skills: Let Agents Design Agents"
